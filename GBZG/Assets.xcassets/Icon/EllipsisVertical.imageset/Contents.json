@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Menu Icon (3 Dots Vertical).svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
