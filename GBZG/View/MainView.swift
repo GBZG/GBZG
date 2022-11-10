@@ -11,6 +11,7 @@ struct MainView: View {
     var body: some View {
         // 다크모드를 테스트 해보세요!
         // 시뮬레이터에서 cmd + shift + A
+        Image("Bin")
         Text("Hello, world!")
             .padding()
             .foregroundColor(.textPrimary)
