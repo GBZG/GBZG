@@ -14,7 +14,7 @@ struct MainView: View {
         Image("Bin")
         Text("Hello, world!")
             .padding()
-            .foregroundColor(.textPrimary)
+            .foregroundColor(.primaryPurple)
     }
 }
 
