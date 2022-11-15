@@ -29,6 +29,14 @@ enum GBZGTab: CaseIterable {
         case .template: return "person.crop.circle.fill"
         }
     }
+    
+    var disableImage: String {
+        switch self {
+        case .home : return "HotelKeys"
+        case .write: return "Pencil"
+        case .template: return "TextBlock"
+        }
+    }
  
     @ViewBuilder
     var view: some View {
