@@ -10,7 +10,7 @@ import SwiftUI
 struct GBZGTabView: View {
     var body: some View {
         TabView {
-            ForEach(Tab.allCases, id: \.self) { tab in
+            ForEach(GBZGTab.allCases, id: \.self) { tab in
                 tab.view
                     .tabItem {
                         

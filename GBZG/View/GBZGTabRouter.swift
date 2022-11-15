@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Tab: CaseIterable {
+enum GBZGTab: CaseIterable {
     case home
     case write
     case template
