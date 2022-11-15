@@ -37,6 +37,14 @@ enum GBZGTab: CaseIterable {
         case .template: return "TextBlock"
         }
     }
+    
+    var tag: Int {
+        switch self {
+        case .home : return 0
+        case .write: return 1
+        case .template: return 2
+        }
+    }
  
     @ViewBuilder
     var view: some View {

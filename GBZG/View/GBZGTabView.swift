@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct GBZGTabView: View {
+    
+    @State private var tabSelection = 0
+    
     var body: some View {
-        TabView {
+        TabView(selection: $tabSelection) {
             ForEach(GBZGTab.allCases, id: \.self) { tab in
                 tab.view
                     .tabItem {
@@ -17,7 +20,7 @@ struct GBZGTabView: View {
                         // TODO: 추후에 이미지나 시스템 이미지 맞는 걸로 변경
                         
                         Label(tab.tabName, systemImage: tab.systemImage)
-                    }
+                    }.tag(tab.tag)
             }
         }
     }
