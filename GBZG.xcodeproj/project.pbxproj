@@ -94,7 +94,6 @@
 				7AD990BC291AA37500553E2A /* Component */,
 				7AD990AC291A9C9E00553E2A /* MainView.swift */,
 				A09CBA6F292295E700D31F5F /* GBZGTabView.swift */,
-				A09CBA712922962400D31F5F /* GBZGTabRouter.swift */,
 				A09CBA73292296EA00D31F5F /* HomeView.swift */,
 				A09CBA75292296F400D31F5F /* WriteView.swift */,
 				A09CBA77292296FE00D31F5F /* TemplateView.swift */,
@@ -113,6 +112,7 @@
 		7AD990BA291A9CDD00553E2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A09CBA712922962400D31F5F /* GBZGTabRouter.swift */,
 				7AD990C1291AA39D00553E2A /* SampleModel.swift */,
 			);
 			path = Model;

@@ -13,8 +13,8 @@ struct TemplateView: View {
     }
 }
 
-struct TemplateView_Previews: PreviewProvider {
-    static var previews: some View {
-        TemplateView()
-    }
-}
+//struct TemplateView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TemplateView()
+//    }
+//}

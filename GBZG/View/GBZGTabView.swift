@@ -23,8 +23,8 @@ struct GBZGTabView: View {
     }
 }
 
-struct GBZGTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        GBZGTabView()
-    }
-}
+//struct GBZGTabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GBZGTabView()
+//    }
+//}
