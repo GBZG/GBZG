@@ -28,16 +28,16 @@ struct GbzgButton: View {
     }
 }
 
-struct GbzgButton_Previews: PreviewProvider {
-    static var previews: some View {
-        List {
-            GbzgButton(label: "이 템플릿으로 리뷰 작성",
-                       action: { () -> Void in return },
-                       disabled: .constant(false))
-            
-            GbzgButton(label: "완료",
-                       action: { () -> Void in return },
-                       disabled: .constant(true))
-        }
-    }
-}
+//struct GbzgButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        List {
+//            GbzgButton(label: "이 템플릿으로 리뷰 작성",
+//                       action: { () -> Void in return },
+//                       disabled: .constant(false))
+//            
+//            GbzgButton(label: "완료",
+//                       action: { () -> Void in return },
+//                       disabled: .constant(true))
+//        }
+//    }
+//}

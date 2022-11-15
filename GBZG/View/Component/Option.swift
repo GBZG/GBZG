@@ -30,16 +30,16 @@ struct Option: View {
     }
 }
 
-struct Option_Previews: PreviewProvider {
-    static var previews: some View {
-        List {
-            Option(label: "체감 난이도",
-                   action: { () -> Void in return },
-                   buttonActive: .constant(true))
-            
-            Option(label: "사용 힌트 수",
-                   action: { () -> Void in return },
-                   buttonActive: .constant(false))
-        }
-    }
-}
+//struct Option_Previews: PreviewProvider {
+//    static var previews: some View {
+//        List {
+//            Option(label: "체감 난이도",
+//                   action: { () -> Void in return },
+//                   buttonActive: .constant(true))
+//
+//            Option(label: "사용 힌트 수",
+//                   action: { () -> Void in return },
+//                   buttonActive: .constant(false))
+//        }
+//    }
+//}
