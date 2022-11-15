@@ -20,13 +20,13 @@ enum GBZGTab: CaseIterable {
         }
     }
     
-    // TODO: 추후에 선정 아이콘에 맞는 이미지나 시스템이미지로 변경
+    // TODO: 추후에 활성 아이콘 추가시 변경 예정
     
-    var systemImage: String {
+    var enableImage: String {
         switch self {
-        case .home : return "key.fill"
-        case .write: return "folder.fill"
-        case .template: return "person.crop.circle.fill"
+        case .home : return "EllipsisVertical"
+        case .write: return "EllipsisVertical"
+        case .template: return "EllipsisVertical"
         }
     }
     
