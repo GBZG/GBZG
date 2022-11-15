@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct TempleteView: View {
+struct TemplateView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct TempleteView_Previews: PreviewProvider {
+struct TemplateView_Previews: PreviewProvider {
     static var previews: some View {
-        TempleteView()
+        TemplateView()
     }
 }

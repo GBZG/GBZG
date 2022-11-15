@@ -10,13 +10,13 @@ import SwiftUI
 enum Tab: CaseIterable {
     case home
     case write
-    case templete
+    case template
     
     var tabName: String {
         switch self {
         case .home : return "Home"
         case .write: return "Write"
-        case .templete: return "Templete"
+        case .template: return "Template"
         }
     }
     
@@ -26,7 +26,7 @@ enum Tab: CaseIterable {
         switch self {
         case .home : return "key.fill"
         case .write: return "folder.fill"
-        case .templete: return "person.crop.circle.fill"
+        case .template: return "person.crop.circle.fill"
         }
     }
  
@@ -35,7 +35,7 @@ enum Tab: CaseIterable {
         switch self {
         case .home : HomeView()
         case .write: WriteView()
-        case .templete: TempleteView()
+        case .template: TemplateView()
         }
     }
 }
