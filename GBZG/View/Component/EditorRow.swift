@@ -14,28 +14,41 @@ struct EditorRow: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "line.3.horizontal")
-                .font(.system(size: 20, weight: .medium))
-                .foregroundColor(.textField)
+            threeLineView
                 .padding(8)
             VStack(alignment: .leading, spacing: 12) {
                 HStack {
-                    Text(editorType.rawValue)
-                        .lineLimit(1)
-                        .font(.system(size: 17, weight: .light))
-                        .foregroundColor(.primary)
+                    titleLabelView
                     Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "xmark.app")
-                            .font(.system(size: 20, weight: .medium))
-                            .foregroundColor(.textField)
-                    }
+                    xmarkButtonView
                 }
                 inputView(for: editorType)
             }
             .padding(8)
+        }
+    }
+}
+
+extension EditorRow {
+    private var threeLineView: some View {
+        Image(systemName: "line.3.horizontal")
+            .font(.system(size: 20, weight: .medium))
+            .foregroundColor(.textField)
+    }
+    
+    private var titleLabelView: some View {
+        Text(editorType.rawValue)
+            .font(.system(size: 17, weight: .light))
+            .foregroundColor(.primary)
+    }
+    
+    private var xmarkButtonView: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: "xmark.app")
+                .font(.system(size: 20, weight: .medium))
+                .foregroundColor(.textField)
         }
     }
     
@@ -59,11 +72,11 @@ struct EditorRow: View {
     }
     
     private var overlayView: some View {
-        GeometryReader { geo in
+        GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle()
                     .foregroundColor(.primaryPurple)
-                    .frame(width: CGFloat(rating) * geo.size.width / 5.0 )
+                    .frame(width: CGFloat(rating) * geometry.size.width / 5.0 )
             }
         }
         .allowsHitTesting(false)
@@ -101,76 +114,28 @@ struct EditorRow: View {
         case .isSuccess:
             return AnyView(
                 HStack(spacing: 8) {
-                    Button {
+                    TagButton(label: "탈출 성공") {
                         
-                    } label: {
-                        Text("탈출 성공")
-                            .font(.system(size: 15, weight: .light))
-                            .foregroundColor(.secondary)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(Color.tagBase)
-                            .cornerRadius(12)
                     }
-                    Button {
+                    TagButton(label: "탈출 실패") {
                         
-                    } label: {
-                        Text("탈출 실패")
-                            .font(.system(size: 15, weight: .light))
-                            .foregroundColor(.secondary)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(Color.tagBase)
-                            .cornerRadius(12)
                     }
                 }
             )
         case .grade:
             return AnyView(
                 HStack(spacing: 8) {
-                    Button {
+                    TagButton(label: "흙길") {
                         
-                    } label: {
-                        Text("흙길")
-                            .font(.system(size: 15, weight: .light))
-                            .foregroundColor(.secondary)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(Color.tagBase)
-                            .cornerRadius(12)
                     }
-                    Button {
+                    TagButton(label: "풀길") {
                         
-                    } label: {
-                        Text("풀길")
-                            .font(.system(size: 15, weight: .light))
-                            .foregroundColor(.secondary)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(Color.tagBase)
-                            .cornerRadius(12)
                     }
-                    Button {
+                    TagButton(label: "꽃길") {
                         
-                    } label: {
-                        Text("꽃길")
-                            .font(.system(size: 15, weight: .light))
-                            .foregroundColor(.secondary)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(Color.tagBase)
-                            .cornerRadius(12)
                     }
-                    Button {
+                    TagButton(label: "인생 테마") {
                         
-                    } label: {
-                        Text("인생테마")
-                            .font(.system(size: 15, weight: .light))
-                            .foregroundColor(.secondary)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 8)
-                            .background(Color.tagBase)
-                            .cornerRadius(12)
                     }
                 }
             )
