@@ -11,7 +11,7 @@ import SwiftUI
 struct GBZGApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            GBZGTabView()
         }
     }
 }
