@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		251EB6F929213128009FB8C4 /* GbzgButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6F829213128009FB8C4 /* GbzgButton.swift */; };
+		251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6F829213128009FB8C4 /* GBZGButton.swift */; };
 		251EB6FD2921FE3C009FB8C4 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6FC2921FE3C009FB8C4 /* Option.swift */; };
 		7AD990AB291A9C9E00553E2A /* GBZGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990AA291A9C9E00553E2A /* GBZGApp.swift */; };
 		7AD990AD291A9C9E00553E2A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990AC291A9C9E00553E2A /* MainView.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		251EB6F829213128009FB8C4 /* GbzgButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GbzgButton.swift; sourceTree = "<group>"; };
+		251EB6F829213128009FB8C4 /* GBZGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGButton.swift; sourceTree = "<group>"; };
 		251EB6FC2921FE3C009FB8C4 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		7AD990A7291A9C9E00553E2A /* GBZG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBZG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD990AA291A9C9E00553E2A /* GBZGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGApp.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD990BD291AA38900553E2A /* SampleComponent.swift */,
-				251EB6F829213128009FB8C4 /* GbzgButton.swift */,
+				251EB6F829213128009FB8C4 /* GBZGButton.swift */,
 				251EB6FC2921FE3C009FB8C4 /* Option.swift */,
 			);
 			path = Component;
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				251EB6FD2921FE3C009FB8C4 /* Option.swift in Sources */,
-				251EB6F929213128009FB8C4 /* GbzgButton.swift in Sources */,
+				251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */,
 				7AD990C6291AA9A100553E2A /* Color+.swift in Sources */,
 				7AD990AD291A9C9E00553E2A /* MainView.swift in Sources */,
 				7AD990C2291AA39D00553E2A /* SampleModel.swift in Sources */,

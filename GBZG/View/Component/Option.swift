@@ -13,19 +13,17 @@ struct Option: View {
     @Binding var buttonActive: Bool
     
     var body: some View {
-        Button(action: { () -> Void in
+        Button(action: {
             buttonActive.toggle()
             action()
         }) {
-            HStack {
-                Text(label)
-            }
-            .padding(.all, 16.0)
-            .frame(width: 171.0)
-            .foregroundColor(Color.textSecondary)
-            .background(Color.tagBase)
-            .cornerRadius(12.0)
-            .opacity(buttonActive ? 1.0 : 0.3)
+            Text(label)
+                .padding(16.0)
+                .frame(minWidth: 171.0, maxWidth: 231.0)
+                .foregroundColor(Color.textSecondary)
+                .background(Color.tagBase)
+                .cornerRadius(12.0)
+                .opacity(buttonActive ? 1.0 : 0.3)
         }
     }
 }
