@@ -17,6 +17,11 @@
 		7AD990C0291AA39600553E2A /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990BF291AA39600553E2A /* SampleViewModel.swift */; };
 		7AD990C2291AA39D00553E2A /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990C1291AA39D00553E2A /* SampleModel.swift */; };
 		7AD990C6291AA9A100553E2A /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990C5291AA9A100553E2A /* Color+.swift */; };
+		A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA6F292295E700D31F5F /* GBZGTabView.swift */; };
+		A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA712922962400D31F5F /* GBZGTabRouter.swift */; };
+		A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA73292296EA00D31F5F /* HomeView.swift */; };
+		A09CBA76292296F400D31F5F /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA75292296F400D31F5F /* WriteView.swift */; };
+		A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA77292296FE00D31F5F /* TemplateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		7AD990BF291AA39600553E2A /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
 		7AD990C1291AA39D00553E2A /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		7AD990C5291AA9A100553E2A /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		A09CBA6F292295E700D31F5F /* GBZGTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGTabView.swift; sourceTree = "<group>"; };
+		A09CBA712922962400D31F5F /* GBZGTabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGTabRouter.swift; sourceTree = "<group>"; };
+		A09CBA73292296EA00D31F5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A09CBA75292296F400D31F5F /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		A09CBA77292296FE00D31F5F /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,10 @@
 			children = (
 				7AD990BC291AA37500553E2A /* Component */,
 				7AD990AC291A9C9E00553E2A /* MainView.swift */,
+				A09CBA6F292295E700D31F5F /* GBZGTabView.swift */,
+				A09CBA73292296EA00D31F5F /* HomeView.swift */,
+				A09CBA75292296F400D31F5F /* WriteView.swift */,
+				A09CBA77292296FE00D31F5F /* TemplateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +116,7 @@
 		7AD990BA291A9CDD00553E2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A09CBA712922962400D31F5F /* GBZGTabRouter.swift */,
 				7AD990C1291AA39D00553E2A /* SampleModel.swift */,
 			);
 			path = Model;
@@ -197,11 +212,16 @@
 			files = (
 				251EB6FD2921FE3C009FB8C4 /* Option.swift in Sources */,
 				251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */,
+				A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */,
 				7AD990C6291AA9A100553E2A /* Color+.swift in Sources */,
+				A09CBA76292296F400D31F5F /* WriteView.swift in Sources */,
 				7AD990AD291A9C9E00553E2A /* MainView.swift in Sources */,
+				A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */,
 				7AD990C2291AA39D00553E2A /* SampleModel.swift in Sources */,
 				7AD990BE291AA38900553E2A /* SampleComponent.swift in Sources */,
 				7AD990C0291AA39600553E2A /* SampleViewModel.swift in Sources */,
+				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
+				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
 				7AD990AB291A9C9E00553E2A /* GBZGApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
