@@ -11,13 +11,12 @@
 		163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163A0F9F2925582700BFF0D2 /* TagButton.swift */; };
 		251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6F829213128009FB8C4 /* GBZGButton.swift */; };
 		251EB6FD2921FE3C009FB8C4 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6FC2921FE3C009FB8C4 /* Option.swift */; };
+		7AD70D08293E62FF009142FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70D07293E62FF009142FC /* HomeViewModel.swift */; };
+		7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70D09293E6307009142FC /* WriteViewModel.swift */; };
+		7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70D0B293E6310009142FC /* TemplateViewModel.swift */; };
 		7AD990AB291A9C9E00553E2A /* GBZGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990AA291A9C9E00553E2A /* GBZGApp.swift */; };
-		7AD990AD291A9C9E00553E2A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990AC291A9C9E00553E2A /* MainView.swift */; };
 		7AD990AF291A9CA000553E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD990AE291A9CA000553E2A /* Assets.xcassets */; };
 		7AD990B2291A9CA000553E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD990B1291A9CA000553E2A /* Preview Assets.xcassets */; };
-		7AD990BE291AA38900553E2A /* SampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990BD291AA38900553E2A /* SampleComponent.swift */; };
-		7AD990C0291AA39600553E2A /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990BF291AA39600553E2A /* SampleViewModel.swift */; };
-		7AD990C2291AA39D00553E2A /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990C1291AA39D00553E2A /* SampleModel.swift */; };
 		7AD990C6291AA9A100553E2A /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990C5291AA9A100553E2A /* Color+.swift */; };
 		A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA6F292295E700D31F5F /* GBZGTabView.swift */; };
 		A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA712922962400D31F5F /* GBZGTabRouter.swift */; };
@@ -31,14 +30,13 @@
 		163A0F9F2925582700BFF0D2 /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		251EB6F829213128009FB8C4 /* GBZGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGButton.swift; sourceTree = "<group>"; };
 		251EB6FC2921FE3C009FB8C4 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		7AD70D07293E62FF009142FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7AD70D09293E6307009142FC /* WriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewModel.swift; sourceTree = "<group>"; };
+		7AD70D0B293E6310009142FC /* TemplateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewModel.swift; sourceTree = "<group>"; };
 		7AD990A7291A9C9E00553E2A /* GBZG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBZG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD990AA291A9C9E00553E2A /* GBZGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGApp.swift; sourceTree = "<group>"; };
-		7AD990AC291A9C9E00553E2A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7AD990AE291A9CA000553E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD990B1291A9CA000553E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7AD990BD291AA38900553E2A /* SampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleComponent.swift; sourceTree = "<group>"; };
-		7AD990BF291AA39600553E2A /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
-		7AD990C1291AA39D00553E2A /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		7AD990C5291AA9A100553E2A /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		A09CBA6F292295E700D31F5F /* GBZGTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGTabView.swift; sourceTree = "<group>"; };
 		A09CBA712922962400D31F5F /* GBZGTabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGTabRouter.swift; sourceTree = "<group>"; };
@@ -58,6 +56,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AD70D00293E6290009142FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A09CBA73292296EA00D31F5F /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7AD70D01293E6295009142FC /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				A09CBA75292296F400D31F5F /* WriteView.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		7AD70D02293E629D009142FC /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				A09CBA77292296FE00D31F5F /* TemplateView.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		7AD70D03293E62CB009142FC /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A09CBA6F292295E700D31F5F /* GBZGTabView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		7AD70D04293E62E3009142FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7AD70D07293E62FF009142FC /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7AD70D05293E62E9009142FC /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				7AD70D09293E6307009142FC /* WriteViewModel.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		7AD70D06293E62EF009142FC /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				7AD70D0B293E6310009142FC /* TemplateViewModel.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
 		7AD9909E291A9C9E00553E2A = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +153,11 @@
 		7AD990B8291A9CBE00553E2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7AD70D03293E62CB009142FC /* Tab */,
+				7AD70D00293E6290009142FC /* Home */,
+				7AD70D01293E6295009142FC /* Write */,
+				7AD70D02293E629D009142FC /* Template */,
 				7AD990BC291AA37500553E2A /* Component */,
-				7AD990AC291A9C9E00553E2A /* MainView.swift */,
-				A09CBA6F292295E700D31F5F /* GBZGTabView.swift */,
-				A09CBA73292296EA00D31F5F /* HomeView.swift */,
-				A09CBA75292296F400D31F5F /* WriteView.swift */,
-				A09CBA77292296FE00D31F5F /* TemplateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,7 +165,9 @@
 		7AD990B9291A9CD300553E2A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7AD990BF291AA39600553E2A /* SampleViewModel.swift */,
+				7AD70D04293E62E3009142FC /* Home */,
+				7AD70D05293E62E9009142FC /* Write */,
+				7AD70D06293E62EF009142FC /* Template */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -121,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				A09CBA712922962400D31F5F /* GBZGTabRouter.swift */,
-				7AD990C1291AA39D00553E2A /* SampleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,7 +191,6 @@
 		7AD990BC291AA37500553E2A /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				7AD990BD291AA38900553E2A /* SampleComponent.swift */,
 				163A0F9B2925261E00BFF0D2 /* EditorRow.swift */,
 				163A0F9F2925582700BFF0D2 /* TagButton.swift */,
 				251EB6F829213128009FB8C4 /* GBZGButton.swift */,
@@ -220,14 +273,13 @@
 				251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */,
 				A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */,
 				163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */,
+				7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */,
 				163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */,
 				7AD990C6291AA9A100553E2A /* Color+.swift in Sources */,
 				A09CBA76292296F400D31F5F /* WriteView.swift in Sources */,
-				7AD990AD291A9C9E00553E2A /* MainView.swift in Sources */,
 				A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */,
-				7AD990C2291AA39D00553E2A /* SampleModel.swift in Sources */,
-				7AD990BE291AA38900553E2A /* SampleComponent.swift in Sources */,
-				7AD990C0291AA39600553E2A /* SampleViewModel.swift in Sources */,
+				7AD70D08293E62FF009142FC /* HomeViewModel.swift in Sources */,
+				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
 				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
 				7AD990AB291A9C9E00553E2A /* GBZGApp.swift in Sources */,
