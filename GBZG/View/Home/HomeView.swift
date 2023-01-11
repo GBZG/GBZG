@@ -39,8 +39,29 @@ struct HomeView: View {
 extension HomeView {
     var myCharacterContainer: some View {
         VStack {
-            Text("124방")
+            HStack {
+                Image(systemName: "circle")
+                Text("124방")
+                    .padding(.trailing, 16)
+                Image(systemName: "circle")
+                Text("52리뷰")
+                Spacer()
+            }
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(["극쫄", "장치선호", "방탈출고수"], id: \.self) { characteristic in
+                        Text("#\(characteristic)")
+                            .GBZGBody2()
+                            .foregroundColor(Color.white)
+                            .padding(8)
+                            .background(Color.primaryPurple)
+                            .cornerRadius(12)
+                    }
+                }
+            }
         }
+        .padding(.bottom, 20)
     }
 }
 
