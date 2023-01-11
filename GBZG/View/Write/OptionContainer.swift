@@ -31,7 +31,7 @@ struct OptionContainer: View {
                         .background(Color.tagBase)
                     contentView
                 }
-                    .transition(.move(edge: .bottom))
+                .transition(.move(edge: .bottom))
             }
             Spacer()
         }
@@ -71,9 +71,11 @@ struct OptionContainer: View {
         .padding(.horizontal, 23)
         .padding(.vertical, 16)
     }
-    
+}
+ 
+private extension OptionContainer {
     // 내용 뷰
-    private var contentView: some View {
+    var contentView: some View {
         ZStack {
             switch contentMode {
             case .none:
@@ -90,7 +92,7 @@ struct OptionContainer: View {
     
     // 옵션 뷰
     // TODO: 뷰모델과 연결해서 로직 추가 해야 함
-    private var optionView: some View {
+    var optionView: some View {
         VStack(spacing: 16) {
             HStack(spacing: 16) {
                 Option(label: "체감 난이도", action: {
@@ -128,7 +130,8 @@ struct OptionContainer: View {
     }
     
     // 오프셋 계산 함수
-    private func calculateOffset() -> CGFloat {
+    // TODO: 뷰모델 혹은 추후 generic 하게 전역함수로 변경
+    func calculateOffset() -> CGFloat {
         switch containerMode {
         case .close:
             return UIScreen.main.bounds.height - 90
@@ -138,8 +141,8 @@ struct OptionContainer: View {
     }
 }
 
-struct OptionContainer_Previews: PreviewProvider {
-    static var previews: some View {
-        OptionContainer(containerMode: .constant(.open), contentMode: .constant(.none))
-    }
-}
+//struct OptionContainer_Previews: PreviewProvider {
+//    static var previews: some View {
+//        OptionContainer(containerMode: .constant(.open), contentMode: .constant(.none))
+//    }
+//}
