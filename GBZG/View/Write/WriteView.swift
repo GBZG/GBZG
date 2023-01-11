@@ -10,6 +10,7 @@ import SwiftUI
 struct WriteView: View {
     @ObservedObject var viewModel = WriteViewModel()
     @State private var date = Date()
+    @State private var companion = ""
     
     var body: some View {
         ZStack {
@@ -59,8 +60,10 @@ private extension WriteView {
                 viewModel.didTapBasicInfoButton()
             }
             
+
             HStack {
                 VStack(alignment: .leading) {
+                    // 방문일
                     BasicInfoContent(title: "방문일") {
                         Text("\(date.convertToKoreanFormat())")
                             .foregroundColor(.textSecondary)
@@ -69,10 +72,17 @@ private extension WriteView {
                                 viewModel.didCalendarTapped()
                             }
                     }
+                    .padding(.bottom, 10)
+                    
+                    // 동행인
+                    BasicInfoContent(title: "동행인") {
+                        TextField("동행인을 입력하세요", text: $companion)
+                            .foregroundColor(.textSecondary)
+                    }
                 }
                 Spacer()
             }
-            .frame(height: viewModel.isBasicInfoContainerActive ? 75 : 0)
+            .frame(height: viewModel.isBasicInfoContainerActive ? 150 : 0)
             .opacity(viewModel.isBasicInfoContainerActive ? 1 : 0)
         }
         .padding(.top, 24)

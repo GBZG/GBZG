@@ -23,7 +23,7 @@ struct BasicInfoContent<Content: View>: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HStack {
                 titleView
                 content
