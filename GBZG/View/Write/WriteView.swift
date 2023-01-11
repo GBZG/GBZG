@@ -23,7 +23,6 @@ struct WriteView: View {
             .sheet(isPresented: $viewModel.isSearchViewActive) {
                 Text("SearchView Here")
             }
-
             calendarView
         }
     }
@@ -63,7 +62,7 @@ private extension WriteView {
             HStack {
                 VStack(alignment: .leading) {
                     BasicInfoContent(title: "방문일") {
-                        Text("\(Date().formatted())")
+                        Text("\(date.convertToKoreanFormat())")
                             .foregroundColor(.textSecondary)
                             .fontWeight(.regular)
                             .onTapGesture {
@@ -110,7 +109,7 @@ private extension WriteView {
         VStack {
             if viewModel.isCalendarActive {
                 DatePicker(
-                    "Start Date",
+                    "",
                     selection: $date,
                     displayedComponents: [.date]
                 )
@@ -119,13 +118,14 @@ private extension WriteView {
                 .background(.white)
                 .cornerRadius(13)
                 .padding(.horizontal)
+                .tint(.primaryPurple)
+                .onChange(of: date) { _ in
+                    viewModel.didCalendarTapped()
+                }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(viewModel.isCalendarActive ? .black.opacity(0.2) : .clear)
-//        .onTapGesture {
-//            viewModel.didCalendarTapped()
-//        }
     }
 }
 

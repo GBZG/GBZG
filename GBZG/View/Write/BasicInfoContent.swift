@@ -27,6 +27,7 @@ struct BasicInfoContent<Content: View>: View {
             HStack {
                 titleView
                 content
+                Spacer()
             }
             checkBox
         }
@@ -57,7 +58,10 @@ private extension BasicInfoContent {
             Text("기억이 나지 않아요")
                 .foregroundColor(.textField)
                 .font(.footnote)
+            
+            Spacer()
         }
+        .padding(.top, 10)
     }
 }
 
