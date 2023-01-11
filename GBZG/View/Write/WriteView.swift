@@ -103,15 +103,7 @@ private extension WriteView {
             .font(.subheadline)
             .onTapGesture {
                 viewModel.didTapCustomInfoButton()
-            }
-            
-            VStack {
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-            }
-            .frame(height: viewModel.isCustomInfoContainerActive ? 35 : 0)
-            .opacity(viewModel.isCustomInfoContainerActive ? 1 : 0)
+            }            
         }
     }
     
