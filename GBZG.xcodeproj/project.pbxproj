@@ -18,6 +18,7 @@
 		7AD990AF291A9CA000553E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD990AE291A9CA000553E2A /* Assets.xcassets */; };
 		7AD990B2291A9CA000553E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD990B1291A9CA000553E2A /* Preview Assets.xcassets */; };
 		7AD990C6291AA9A100553E2A /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD990C5291AA9A100553E2A /* Color+.swift */; };
+		A04F1316296F08FF0004F3CC /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F1315296F08FF0004F3CC /* Font+.swift */; };
 		A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA6F292295E700D31F5F /* GBZGTabView.swift */; };
 		A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA712922962400D31F5F /* GBZGTabRouter.swift */; };
 		A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA73292296EA00D31F5F /* HomeView.swift */; };
@@ -38,6 +39,7 @@
 		7AD990AE291A9CA000553E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD990B1291A9CA000553E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7AD990C5291AA9A100553E2A /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		A04F1315296F08FF0004F3CC /* Font+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
 		A09CBA6F292295E700D31F5F /* GBZGTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGTabView.swift; sourceTree = "<group>"; };
 		A09CBA712922962400D31F5F /* GBZGTabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGTabRouter.swift; sourceTree = "<group>"; };
 		A09CBA73292296EA00D31F5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD990C5291AA9A100553E2A /* Color+.swift */,
+				A04F1315296F08FF0004F3CC /* Font+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */,
 				7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */,
 				163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */,
+				A04F1316296F08FF0004F3CC /* Font+.swift in Sources */,
 				7AD990C6291AA9A100553E2A /* Color+.swift in Sources */,
 				A09CBA76292296F400D31F5F /* WriteView.swift in Sources */,
 				A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */,
