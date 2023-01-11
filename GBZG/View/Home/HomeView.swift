@@ -72,12 +72,14 @@ extension HomeView {
                 Text("인생테마")
                     .gbzgTitle1()
                 Spacer()
-                Group {
-                    Text("전체보기")
-                    Image(systemName: "chevron.right")
+                NavigationLink(destination: Text("인생테마 랭킹뷰")) {
+                    Group {
+                        Text("전체보기")
+                        Image(systemName: "chevron.right")
+                    }
+                    .gbzgBody2()
+                    .foregroundColor(.secondary)
                 }
-                .gbzgBody2()
-                .foregroundColor(.secondary)
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
