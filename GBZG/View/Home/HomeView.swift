@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    let lifeThemeImageSize = (UIScreen.main.bounds.size.width - 32 - 36 - 56) / 3
     let escapeLogItemImageSize = (UIScreen.main.bounds.size.width - 32) / 5
     
     var body: some View {
@@ -46,7 +47,25 @@ extension HomeView {
 extension HomeView {
     var lifeThemeContainer: some View {
         VStack {
-            Text("인생테마")
+            HStack {
+                Text("인생테마")
+                    .GBZGTitle1()
+                Spacer()
+                Group {
+                    Text("전체보기")
+                    Image(systemName: "chevron.right")
+                }
+                .GBZGBody2()
+                .foregroundColor(.secondary)
+            }
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(Range(0...5)) { num in
+                        RoundedRectangle(cornerRadius: 12)
+                            .frame(width: self.lifeThemeImageSize, height: self.lifeThemeImageSize * 14 / 11)
+                    }
+                }
+            }
         }
     }
 }
@@ -111,8 +130,8 @@ extension HomeView {
     }
 }
 
-//struct HomeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeView()
-//    }
-//}
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
+}
