@@ -52,7 +52,7 @@ extension HomeView {
                 HStack {
                     ForEach(["극쫄", "장치선호", "방탈출고수"], id: \.self) { characteristic in
                         Text("#\(characteristic)")
-                            .GBZGBody2()
+                            .gbzgBody2()
                             .foregroundColor(Color.white)
                             .padding(8)
                             .background(Color.primaryPurple)
@@ -70,13 +70,13 @@ extension HomeView {
         VStack {
             HStack {
                 Text("인생테마")
-                    .GBZGTitle1()
+                    .gbzgTitle1()
                 Spacer()
                 Group {
                     Text("전체보기")
                     Image(systemName: "chevron.right")
                 }
-                .GBZGBody2()
+                .gbzgBody2()
                 .foregroundColor(.secondary)
             }
             ScrollView(.horizontal, showsIndicators: false) {
@@ -96,7 +96,7 @@ extension HomeView {
         VStack {
             HStack {
                 Text("탈출일지")
-                    .GBZGTitle1()
+                    .gbzgTitle1()
                 Spacer()
             }
             .padding(.bottom, 16)
@@ -107,7 +107,7 @@ extension HomeView {
                 Text("최근 방문일 순")
                 Image(systemName: "chevron.down")
             }
-            .GBZGBody2()
+            .gbzgBody2()
             .foregroundColor(.secondary)
             .padding(.horizontal, 7)
             .padding(.bottom, 16)
@@ -134,7 +134,7 @@ extension HomeView {
                     Image(systemName: "leaf")
                     Spacer()
                 }
-                .GBZGHeadline()
+                .gbzgHeadline()
                 .tint(.primary)
                 .padding(.bottom, 4)
                 HStack {
@@ -142,7 +142,7 @@ extension HomeView {
                     Text("지구별 방탈출 | 22.06.21")
                     Spacer()
                 }
-                .GBZGBody2()
+                .gbzgBody2()
                 .tint(.secondary)
             }
             Spacer()
@@ -151,8 +151,8 @@ extension HomeView {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//    }
+//}

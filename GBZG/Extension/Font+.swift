@@ -8,46 +8,46 @@
 import SwiftUI
 
 extension Font {
-    static var GBZGLargeTitle = Font.system(size: 28, weight: .heavy)
-    static var GBZGTitle1 = Font.system(size: 24, weight: .bold)
-    static var GBZGTitle2 = Font.system(size: 22, weight: .regular)
-    static var GBZGHeadline = Font.system(size: 20, weight: .semibold)
-    static var GBZGBody1 = Font.system(size: 17, weight: .regular)
-    static var GBZGBody2 = Font.system(size: 15, weight: .regular)
-    static var GBZGSubtitle = Font.system(size: 15, weight: .bold)
-    static var GBZGFootnote = Font.system(size: 13, weight: .regular)
+    static var gbzgLargeTitle = Font.system(size: 28, weight: .heavy)
+    static var gbzgTitle1 = Font.system(size: 24, weight: .bold)
+    static var gbzgTitle2 = Font.system(size: 22, weight: .regular)
+    static var gbzgHeadline = Font.system(size: 20, weight: .semibold)
+    static var gbzgBody1 = Font.system(size: 17, weight: .regular)
+    static var gbzgBody2 = Font.system(size: 15, weight: .regular)
+    static var gbzgSubtitle = Font.system(size: 15, weight: .bold)
+    static var gbzgFootnote = Font.system(size: 13, weight: .regular)
 }
 
 extension View {
-    func GBZGLargeTitle() -> some View {
-        self.font(.GBZGLargeTitle)
+    func gbzgLargeTitle() -> some View {
+        self.font(.gbzgLargeTitle)
     }
     
-    func GBZGTitle1() -> some View {
-        self.font(.GBZGTitle1)
+    func gbzgTitle1() -> some View {
+        self.font(.gbzgTitle1)
     }
     
-    func GBZGTitle2() -> some View {
-        self.font(.GBZGTitle2)
+    func gbzgTitle2() -> some View {
+        self.font(.gbzgTitle2)
     }
     
-    func GBZGHeadline() -> some View {
-        self.font(.GBZGHeadline)
+    func gbzgHeadline() -> some View {
+        self.font(.gbzgHeadline)
     }
     
-    func GBZGBody1() -> some View {
-        self.font(.GBZGBody1)
+    func gbzgBody1() -> some View {
+        self.font(.gbzgBody1)
     }
     
-    func GBZGBody2() -> some View {
-        self.font(.GBZGBody2)
+    func gbzgBody2() -> some View {
+        self.font(.gbzgBody2)
     }
     
-    func GBZGSubtitle() -> some View {
-        self.font(.GBZGSubtitle)
+    func gbzgSubtitle() -> some View {
+        self.font(.gbzgSubtitle)
     }
     
-    func GBZGFootnote() -> some View {
-        self.font(.GBZGFootnote)
+    func gbzgFootnote() -> some View {
+        self.font(.gbzgFootnote)
     }
 }
