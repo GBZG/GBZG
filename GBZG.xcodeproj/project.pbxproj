@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163A0F9B2925261E00BFF0D2 /* EditorRow.swift */; };
 		163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163A0F9F2925582700BFF0D2 /* TagButton.swift */; };
+		16E17A95296E948700278012 /* OptionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E17A94296E948700278012 /* OptionContainer.swift */; };
 		251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6F829213128009FB8C4 /* GBZGButton.swift */; };
 		251EB6FD2921FE3C009FB8C4 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6FC2921FE3C009FB8C4 /* Option.swift */; };
 		7A8EDE8C296E711A0011E5D1 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EDE8B296E711A0011E5D1 /* Date+.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		163A0F9B2925261E00BFF0D2 /* EditorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRow.swift; sourceTree = "<group>"; };
 		163A0F9F2925582700BFF0D2 /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
+		16E17A94296E948700278012 /* OptionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionContainer.swift; sourceTree = "<group>"; };
 		251EB6F829213128009FB8C4 /* GBZGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGButton.swift; sourceTree = "<group>"; };
 		251EB6FC2921FE3C009FB8C4 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		7A8EDE8B296E711A0011E5D1 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				A09CBA75292296F400D31F5F /* WriteView.swift */,
+				16E17A94296E948700278012 /* OptionContainer.swift */,
 				7ADA261E296DC18200117A12 /* BasicInfoContent.swift */,
 			);
 			path = Write;
@@ -287,6 +290,7 @@
 				7AD70D08293E62FF009142FC /* HomeViewModel.swift in Sources */,
 				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
+				16E17A95296E948700278012 /* OptionContainer.swift in Sources */,
 				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
 				7AD990AB291A9C9E00553E2A /* GBZGApp.swift in Sources */,
 				7ADA261F296DC18200117A12 /* BasicInfoContent.swift in Sources */,
