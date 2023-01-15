@@ -16,7 +16,7 @@ struct HomeView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 ScrollView(showsIndicators: false) {
-                    myCharacterContainer
+                    profileInfoContainer
                     lifeThemeContainer
                     escapeLogListContainer
                 }
@@ -37,7 +37,7 @@ struct HomeView: View {
 }
 
 private extension HomeView {
-    var myCharacterContainer: some View {
+    var profileInfoContainer: some View {
         VStack {
             HStack {
                 Image(systemName: "circle")
