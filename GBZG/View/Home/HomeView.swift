@@ -84,8 +84,10 @@ private extension HomeView {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(Range(0...5)) { num in
-                        RoundedRectangle(cornerRadius: 12)
-                            .frame(width: self.lifeThemeImageSize, height: self.lifeThemeImageSize * 14 / 11)
+                        NavigationLink(destination: Text("DetailView")) {
+                            RoundedRectangle(cornerRadius: 12)
+                                .frame(width: self.lifeThemeImageSize, height: self.lifeThemeImageSize * 14 / 11)
+                        }
                     }
                 }
             }
