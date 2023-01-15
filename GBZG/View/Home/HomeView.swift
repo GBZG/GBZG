@@ -53,7 +53,7 @@ private extension HomeView {
                     ForEach(["극쫄", "장치선호", "방탈출고수"], id: \.self) { characteristic in
                         Text("#\(characteristic)")
                             .gbzgBody2()
-                            .foregroundColor(Color.white)
+                            .foregroundColor(.white)
                             .padding(8)
                             .background(Color.primaryPurple)
                             .cornerRadius(12)
