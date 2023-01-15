@@ -8,14 +8,14 @@
 import SwiftUI
 
 extension Font {
-    static var gbzgLargeTitle = Font.system(size: 28, weight: .heavy)
-    static var gbzgTitle1 = Font.system(size: 24, weight: .bold)
-    static var gbzgTitle2 = Font.system(size: 22, weight: .regular)
-    static var gbzgHeadline = Font.system(size: 20, weight: .semibold)
-    static var gbzgBody1 = Font.system(size: 17, weight: .regular)
-    static var gbzgBody2 = Font.system(size: 15, weight: .regular)
-    static var gbzgSubtitle = Font.system(size: 15, weight: .bold)
-    static var gbzgFootnote = Font.system(size: 13, weight: .regular)
+    static let gbzgLargeTitle = Font.system(size: 28, weight: .heavy)
+    static let gbzgTitle1 = Font.system(size: 24, weight: .bold)
+    static let gbzgTitle2 = Font.system(size: 22, weight: .regular)
+    static let gbzgHeadline = Font.system(size: 20, weight: .semibold)
+    static let gbzgBody1 = Font.system(size: 17, weight: .regular)
+    static let gbzgBody2 = Font.system(size: 15, weight: .regular)
+    static let gbzgSubtitle = Font.system(size: 15, weight: .bold)
+    static let gbzgFootnote = Font.system(size: 13, weight: .regular)
 }
 
 extension View {
