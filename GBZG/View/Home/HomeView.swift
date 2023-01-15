@@ -36,7 +36,7 @@ struct HomeView: View {
     }
 }
 
-extension HomeView {
+private extension HomeView {
     var myCharacterContainer: some View {
         VStack {
             HStack {
@@ -65,7 +65,7 @@ extension HomeView {
     }
 }
 
-extension HomeView {
+private extension HomeView {
     var lifeThemeContainer: some View {
         VStack {
             HStack {
@@ -93,7 +93,7 @@ extension HomeView {
     }
 }
 
-extension HomeView {
+private extension HomeView {
     var escapeLogListContainer: some View {
         VStack {
             HStack {
