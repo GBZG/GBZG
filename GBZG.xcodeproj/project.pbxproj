@@ -12,6 +12,10 @@
 		16E17A95296E948700278012 /* OptionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E17A94296E948700278012 /* OptionContainer.swift */; };
 		251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6F829213128009FB8C4 /* GBZGButton.swift */; };
 		251EB6FD2921FE3C009FB8C4 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251EB6FC2921FE3C009FB8C4 /* Option.swift */; };
+		25B96F8F2976CF3500987134 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B96F8E2976CF3500987134 /* SearchView.swift */; };
+		25B96F912976D3B500987134 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B96F902976D3B500987134 /* SearchBar.swift */; };
+		25B96F932976F25900987134 /* RecentThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B96F922976F25900987134 /* RecentThemeList.swift */; };
+		25B96F952976F27300987134 /* RecentThemeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B96F942976F27300987134 /* RecentThemeRow.swift */; };
 		7A8EDE8C296E711A0011E5D1 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EDE8B296E711A0011E5D1 /* Date+.swift */; };
 		7AD70D08293E62FF009142FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70D07293E62FF009142FC /* HomeViewModel.swift */; };
 		7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70D09293E6307009142FC /* WriteViewModel.swift */; };
@@ -34,6 +38,10 @@
 		16E17A94296E948700278012 /* OptionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionContainer.swift; sourceTree = "<group>"; };
 		251EB6F829213128009FB8C4 /* GBZGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBZGButton.swift; sourceTree = "<group>"; };
 		251EB6FC2921FE3C009FB8C4 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		25B96F8E2976CF3500987134 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		25B96F902976D3B500987134 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		25B96F922976F25900987134 /* RecentThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentThemeList.swift; sourceTree = "<group>"; };
+		25B96F942976F27300987134 /* RecentThemeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentThemeRow.swift; sourceTree = "<group>"; };
 		7A8EDE8B296E711A0011E5D1 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		7AD70D07293E62FF009142FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7AD70D09293E6307009142FC /* WriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewModel.swift; sourceTree = "<group>"; };
@@ -62,6 +70,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25B96F8D2976CEFE00987134 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				25B96F8E2976CF3500987134 /* SearchView.swift */,
+				25B96F902976D3B500987134 /* SearchBar.swift */,
+				25B96F922976F25900987134 /* RecentThemeList.swift */,
+				25B96F942976F27300987134 /* RecentThemeRow.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		7AD70D00293E6290009142FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +95,7 @@
 				A09CBA75292296F400D31F5F /* WriteView.swift */,
 				16E17A94296E948700278012 /* OptionContainer.swift */,
 				7ADA261E296DC18200117A12 /* BasicInfoContent.swift */,
+				25B96F8D2976CEFE00987134 /* Search */,
 			);
 			path = Write;
 			sourceTree = "<group>";
@@ -281,17 +301,21 @@
 				251EB6FD2921FE3C009FB8C4 /* Option.swift in Sources */,
 				251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */,
 				A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */,
+				25B96F952976F27300987134 /* RecentThemeRow.swift in Sources */,
 				163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */,
+				25B96F932976F25900987134 /* RecentThemeList.swift in Sources */,
 				7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */,
 				163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */,
 				7AD990C6291AA9A100553E2A /* Color+.swift in Sources */,
 				A09CBA76292296F400D31F5F /* WriteView.swift in Sources */,
 				A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */,
 				7AD70D08293E62FF009142FC /* HomeViewModel.swift in Sources */,
+				25B96F8F2976CF3500987134 /* SearchView.swift in Sources */,
 				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
 				16E17A95296E948700278012 /* OptionContainer.swift in Sources */,
 				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
+				25B96F912976D3B500987134 /* SearchBar.swift in Sources */,
 				7AD990AB291A9C9E00553E2A /* GBZGApp.swift in Sources */,
 				7ADA261F296DC18200117A12 /* BasicInfoContent.swift in Sources */,
 				7A8EDE8C296E711A0011E5D1 /* Date+.swift in Sources */,
