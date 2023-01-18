@@ -37,6 +37,9 @@ struct HomeView: View {
 }
 
 private extension HomeView {
+    
+    // MARK: - My Profile Info Container
+    
     var profileInfoContainer: some View {
         VStack {
             HStack {
@@ -63,9 +66,9 @@ private extension HomeView {
         }
         .padding(.bottom, 20)
     }
-}
 
-private extension HomeView {
+    // MARK: Room Escape Life Theme Container
+    
     var lifeThemeContainer: some View {
         VStack {
             HStack {
@@ -93,9 +96,9 @@ private extension HomeView {
             }
         }
     }
-}
 
-private extension HomeView {
+    // MARK: - Room Escape Log List Container
+    
     var escapeLogListContainer: some View {
         VStack {
             HStack {
