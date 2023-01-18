@@ -26,6 +26,7 @@
 		A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA73292296EA00D31F5F /* HomeView.swift */; };
 		A09CBA76292296F400D31F5F /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA75292296F400D31F5F /* WriteView.swift */; };
 		A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA77292296FE00D31F5F /* TemplateView.swift */; };
+		A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F693B02977B720005B7521 /* ThemeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		A09CBA73292296EA00D31F5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A09CBA75292296F400D31F5F /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		A09CBA77292296FE00D31F5F /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
+		A0F693B02977B720005B7521 /* ThemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				A09CBA73292296EA00D31F5F /* HomeView.swift */,
+				A0F693B02977B720005B7521 /* ThemeDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
 				16E17A95296E948700278012 /* OptionContainer.swift in Sources */,
+				A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */,
 				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
 				7AD990AB291A9C9E00553E2A /* GBZGApp.swift in Sources */,
 				7ADA261F296DC18200117A12 /* BasicInfoContent.swift in Sources */,
