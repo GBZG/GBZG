@@ -16,6 +16,7 @@ struct HomeView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 ScrollView(showsIndicators: false) {
+                    homeViewHeader
                     profileInfoContainer
                     lifeThemeContainer
                     escapeLogListContainer
@@ -23,20 +24,26 @@ struct HomeView: View {
             }
             .padding(16)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-            .navigationTitle("롬희의 방탈출")
-            .toolbar {
-                ToolbarItem {
-                    NavigationLink(destination: Text("good")) {
-                        Image(systemName: "gearshape.fill")
-                            .tint(.textField)
-                    }
-                }
-            }
         }
     }
 }
 
 private extension HomeView {
+    
+    // MARK: - HomeView Header
+    
+    var homeViewHeader: some View {
+        HStack {
+            Text("롬희의 방탈출")
+                .gbzgLargeTitle()
+            Spacer()
+            NavigationLink(destination: Text("good")) {
+                Image(systemName: "gearshape.fill")
+                    .tint(.textField)
+            }
+        }
+        .padding(.bottom, 12)
+    }
     
     // MARK: - My Profile Info Container
     
