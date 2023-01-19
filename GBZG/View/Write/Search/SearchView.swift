@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        VStack(spacing: 16.0) {
+        VStack(spacing: 16) {
             Text("테마 검색")
                 .gbzgHeadline()
             
@@ -21,7 +21,7 @@ struct SearchView: View {
                 
                 Spacer()
             }
-            .padding(EdgeInsets(top: 8.0, leading: 0.0, bottom: 4.0, trailing: 0.0))
+            .padding(EdgeInsets(top: 8, leading: 0, bottom: 4, trailing: 0))
             
             RecentThemeList()
         }

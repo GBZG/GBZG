@@ -25,21 +25,21 @@ struct RecentThemeRow: View {
     var body: some View {
         HStack(alignment: .top) {
             Button(action: {}) {
-                HStack(spacing: 16.0) {
+                HStack(spacing: 16) {
                     Rectangle()
                         .foregroundColor(.primaryPurple)
-                        .frame(width: 76.0, height: 104.0)
-                        .cornerRadius(12.0)
+                        .frame(width: 76, height: 104)
+                        .cornerRadius(12)
                     
-                    VStack(alignment: .leading, spacing: 12.0) {
+                    VStack(alignment: .leading, spacing: 12) {
                         Text(model.title)
                             .foregroundColor(.textPrimary)
                             .gbzgHeadline()
                         
-                        HStack(spacing: 4.0) {
+                        HStack(spacing: 4) {
                             Image("Location")
                                 .resizable()
-                                .frame(width: 18.0, height: 18.0)
+                                .frame(width: 18, height: 18)
                             
                             Text(model.location)
                                 .gbzgBody2()
@@ -52,7 +52,7 @@ struct RecentThemeRow: View {
                     Spacer()
                 }
             }
-            .frame(minWidth: 100.0, maxHeight: 104.0)
+            .frame(minWidth: 100, maxHeight: 104)
             
             Spacer()
             
@@ -62,7 +62,7 @@ struct RecentThemeRow: View {
                     .frame(width: 15.73, height: 15.73)
             }
             .foregroundColor(.textField)
-            .frame(width: 24.0, height: 24.0)
+            .frame(width: 24, height: 24)
         }
     }
 }

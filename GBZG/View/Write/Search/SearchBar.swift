@@ -11,10 +11,10 @@ struct SearchBar: View {
     @State private var text = ""
     
     var body: some View {
-        HStack(spacing: 8.0) {
+        HStack(spacing: 8) {
             Image("Magnifyingglass")
                 .resizable()
-                .frame(width: 20.0, height: 20.0)
+                .frame(width: 20, height: 20)
             
             TextField("기록하고 싶은 테마를 검색하세요", text: $text)
                 .gbzgBody2()
@@ -22,9 +22,9 @@ struct SearchBar: View {
             Spacer()
         }
         .foregroundColor(.textSecondary)
-        .padding(12.0)
+        .padding(12)
         .background(Color.tagBase)
-        .cornerRadius(12.0)
+        .cornerRadius(12)
     }
 }
 

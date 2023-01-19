@@ -18,7 +18,7 @@ struct RecentThemeList: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 20.0) {
+            VStack(spacing: 20) {
                 ForEach(tmpList) { row in
                     RecentThemeRow(model: row)
                 }
