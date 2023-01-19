@@ -11,13 +11,13 @@ struct SearchView: View {
     var body: some View {
         VStack(spacing: 16.0) {
             Text("테마 검색")
-                .font(.system(size: 20.0, weight: .semibold))
+                .gbzgHeadline()
             
             SearchBar()
             
             HStack {
                 Text("최근 검색 테마")
-                    .font(.system(size: 15.0, weight: .bold))
+                    .gbzgSubtitle()
                 
                 Spacer()
             }

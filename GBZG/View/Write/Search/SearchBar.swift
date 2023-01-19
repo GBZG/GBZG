@@ -17,7 +17,7 @@ struct SearchBar: View {
                 .frame(width: 20.0, height: 20.0)
             
             TextField("기록하고 싶은 테마를 검색하세요", text: $text)
-                .font(.system(size: 15.0, weight: .regular))
+                .gbzgBody2()
             
             Spacer()
         }

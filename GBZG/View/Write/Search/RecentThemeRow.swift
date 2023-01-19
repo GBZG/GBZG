@@ -34,7 +34,7 @@ struct RecentThemeRow: View {
                     VStack(alignment: .leading, spacing: 12.0) {
                         Text(model.title)
                             .foregroundColor(.textPrimary)
-                            .font(.system(size: 20.0, weight: .semibold))
+                            .gbzgHeadline()
                         
                         HStack(spacing: 4.0) {
                             Image("Location")
@@ -42,7 +42,7 @@ struct RecentThemeRow: View {
                                 .frame(width: 18.0, height: 18.0)
                             
                             Text(model.location)
-                                .font(.system(size: 15.0, weight: .regular))
+                                .gbzgBody2()
                         }
                         .foregroundColor(.textSecondary)
                         
