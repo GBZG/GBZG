@@ -11,26 +11,29 @@ struct ThemeDetailView: View {
     let posterSize = UIScreen.main.bounds.size.width
     
     var body: some View {
-        NavigationView {
-            ScrollView {
+        VStack {
+            ScrollView(showsIndicators: false) {
                 visitedThemeImageContainer
                 visitedThemeInfoContainer
-                visitedThemeLogContainer
+                    .padding(.horizontal, 16)
             }
-            .toolbar {
-                ToolbarItem {
-                    NavigationLink(destination: Text("WriteView")) {
-                        Image("Pencil")
-                    }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .toolbar {
+            ToolbarItem {
+                NavigationLink(destination: Text("WriteView")) {
+                    Image("Pencil")
                 }
             }
-            .ignoresSafeArea()
         }
-        
+        .ignoresSafeArea()
     }
 }
 
 extension ThemeDetailView {
+    
+    // MARK: - visited Theme Image Poster
+    
     var visitedThemeImageContainer: some View {
         Image("sampleImage")
             .resizable()
@@ -39,30 +42,28 @@ extension ThemeDetailView {
             .ignoresSafeArea()
             .padding(.bottom, 24)
     }
-}
-
-extension ThemeDetailView {
+    
+    // MARK: - visited theme info container
+    
     var visitedThemeInfoContainer: some View {
         VStack {
-            Text("roomsA")
-            //.gbzgBody2
-            Text("ThemeName")
-            //.gbzgLargeTitle
+//            locationComponent
+//            themeNameComponent
+//            visitInfoBoxComponent
+//            themeGradeComponent
+//            escapeSuccessComponent
+//            fearLevelComoponent
+//            numberOfhintsUsedComponent
+//            visitedThemeLogComponent
         }
         .padding(.bottom, 16)
     }
 }
 
-extension ThemeDetailView {
-    var visitedThemeLogContainer: some View {
-        VStack {
-            Text("탈출")
-        }
-    }
-}
 
-struct ThemeDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        ThemeDetailView()
-    }
-}
+
+//struct ThemeDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ThemeDetailView()
+//    }
+//}
