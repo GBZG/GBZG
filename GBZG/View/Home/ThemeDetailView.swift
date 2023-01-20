@@ -49,7 +49,7 @@ extension ThemeDetailView {
         VStack {
             locationComponent
             themeNameComponent
-            //            visitInfoBoxComponent
+            visitInfoBoxComponent
             //            themeGradeComponent
             //            escapeSuccessComponent
             //            fearLevelComoponent
@@ -75,9 +75,46 @@ extension ThemeDetailView {
             .foregroundColor(.textPrimary)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
+    
+    var visitInfoBoxComponent: some View {
+        VStack {
+            HStack {
+                Image(systemName: "leaf")
+                Text("2022.05.25")
+                Spacer()
+            }
+            .padding(.all, 16)
+            HStack {
+                Image(systemName: "leaf")
+                Text("테오, 테오, 테오, 테오")
+                Spacer()
+            }
+            .padding([.bottom, .leading, .trailing], 16)
+        }
+        .gbzgBody1()
+        .foregroundColor(.textSecondary)
+        .background(Color.tagBase)
+        .cornerRadius(12)
+        .padding(.bottom, 16)
+    }
 }
 
+// MARK: - ThemeDetailView common component
 
+private struct componentTitle: View {
+    
+    let title: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+        }
+        .gbzgBody1()
+        .foregroundColor(.textPrimary)
+        .padding(.bottom, 12)
+    }
+}
 
 //struct ThemeDetailView_Previews: PreviewProvider {
 //    static var previews: some View {
