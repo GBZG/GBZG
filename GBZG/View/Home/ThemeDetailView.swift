@@ -102,10 +102,10 @@ private extension ThemeDetailView {
     
     var themeGradeComponent: some View {
         VStack {
-            componentTitle(title: "평점")
+            ComponentTitle(title: "평점")
             HStack {
                 ForEach(["흙길", "풀길", "꽃길", "인생테마"], id: \.self) { text in
-                    componentLabel(text: text, selected: text == "인생테마" ? true : false)
+                    ComponentLabel(text: text, selected: text == "인생테마" ? true : false)
                 }
                 Spacer()
             }
@@ -115,10 +115,10 @@ private extension ThemeDetailView {
     
     var escapeSuccessComponent: some View {
         VStack {
-            componentTitle(title: "탈출 성공 여부")
+            ComponentTitle(title: "탈출 성공 여부")
             HStack {
                 ForEach(["탈출 성공", "탈출 실패"], id: \.self) { text in
-                    componentLabel(text: text, selected: text == "탈출 성공" ? true : false)
+                    ComponentLabel(text: text, selected: text == "탈출 성공" ? true : false)
                 }
                 Spacer()
             }
@@ -128,7 +128,7 @@ private extension ThemeDetailView {
     
     var fearLevelComoponent: some View {
         VStack {
-            componentTitle(title: "공포도")
+            ComponentTitle(title: "공포도")
             HStack {
                 ForEach(1...5, id: \.self) { star in
                     if Double(star) > point && Double(star - 1) < point {
@@ -147,7 +147,7 @@ private extension ThemeDetailView {
     
     var numberOfhintsUsedComponent: some View {
         VStack {
-            componentTitle(title: "사용 힌트 수")
+            ComponentTitle(title: "사용 힌트 수")
             HStack {
                 Text("3개")
                     .gbzgBody2()
@@ -160,7 +160,7 @@ private extension ThemeDetailView {
     
     var visitedThemeLogComponent: some View {
         VStack {
-            componentTitle(title: "방탈출 탈출일지")
+            ComponentTitle(title: "방탈출 탈출일지")
             Text("탈출일지 내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용")
                 .gbzgBody2()
                 .foregroundColor(.textField)
