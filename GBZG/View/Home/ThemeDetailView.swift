@@ -47,16 +47,26 @@ extension ThemeDetailView {
     
     var visitedThemeInfoContainer: some View {
         VStack {
-//            locationComponent
-//            themeNameComponent
-//            visitInfoBoxComponent
-//            themeGradeComponent
-//            escapeSuccessComponent
-//            fearLevelComoponent
-//            numberOfhintsUsedComponent
-//            visitedThemeLogComponent
+            locationComponent
+            //            themeNameComponent
+            //            visitInfoBoxComponent
+            //            themeGradeComponent
+            //            escapeSuccessComponent
+            //            fearLevelComoponent
+            //            numberOfhintsUsedComponent
+            //            visitedThemeLogComponent
         }
         .padding(.bottom, 16)
+    }
+    
+    var locationComponent: some View {
+        HStack {
+            Image(systemName: "leaf")
+            Text("roomsA")
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .gbzgBody2()
+        .foregroundColor(.textSecondary)
     }
 }
 
