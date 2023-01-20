@@ -32,7 +32,7 @@ struct ThemeDetailView: View {
     }
 }
 
-extension ThemeDetailView {
+private extension ThemeDetailView {
     
     // MARK: - visited Theme Image Poster
     
