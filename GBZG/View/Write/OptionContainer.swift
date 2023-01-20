@@ -21,6 +21,7 @@ enum ContentMode {
 struct OptionContainer: View {
     @Binding var containerMode: ContainerMode
     @Binding var contentMode: ContentMode
+    @State var showSheet: Bool = false
     
     var body: some View {
         VStack {
@@ -41,6 +42,9 @@ struct OptionContainer: View {
         .offset(y: calculateOffset())
         .animation(.spring(), value: containerMode)
         .edgesIgnoringSafeArea(.all)
+        .sheet(isPresented: $showSheet) {
+            UserCustomReviewView()
+        }
     }
     
     // 상단 버튼열 뷰
@@ -123,7 +127,7 @@ private extension OptionContainer {
                     
                 }, buttonActive: .constant(true))
                 Option(label: "직접 입력", action: {
-                    
+                    showSheet = true
                 }, buttonActive: .constant(true))
             }
         }
@@ -141,8 +145,8 @@ private extension OptionContainer {
     }
 }
 
-//struct OptionContainer_Previews: PreviewProvider {
-//    static var previews: some View {
-//        OptionContainer(containerMode: .constant(.open), contentMode: .constant(.none))
-//    }
-//}
+struct OptionContainer_Previews: PreviewProvider {
+    static var previews: some View {
+        OptionContainer(containerMode: .constant(.close), contentMode: .constant(.none))
+    }
+}

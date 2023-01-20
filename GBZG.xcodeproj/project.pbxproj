@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16352B3A29728C93007C041B /* UserCustomReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16352B3929728C93007C041B /* UserCustomReviewView.swift */; };
+		16352B3C2972EFD6007C041B /* TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16352B3B2972EFD6007C041B /* TextField+.swift */; };
+		16352B3F2977990C007C041B /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16352B3E2977990C007C041B /* KeyboardResponder.swift */; };
+		16352B41297A6CFA007C041B /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16352B40297A6CFA007C041B /* View+.swift */; };
 		163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163A0F9B2925261E00BFF0D2 /* EditorRow.swift */; };
 		163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163A0F9F2925582700BFF0D2 /* TagButton.swift */; };
 		16E17A95296E948700278012 /* OptionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E17A94296E948700278012 /* OptionContainer.swift */; };
@@ -29,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16352B3929728C93007C041B /* UserCustomReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomReviewView.swift; sourceTree = "<group>"; };
+		16352B3B2972EFD6007C041B /* TextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
+		16352B3E2977990C007C041B /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		16352B40297A6CFA007C041B /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		163A0F9B2925261E00BFF0D2 /* EditorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRow.swift; sourceTree = "<group>"; };
 		163A0F9F2925582700BFF0D2 /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		16E17A94296E948700278012 /* OptionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionContainer.swift; sourceTree = "<group>"; };
@@ -62,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16352B3D297798F2007C041B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				16352B3E2977990C007C041B /* KeyboardResponder.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		7AD70D00293E6290009142FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +92,7 @@
 				A09CBA75292296F400D31F5F /* WriteView.swift */,
 				16E17A94296E948700278012 /* OptionContainer.swift */,
 				7ADA261E296DC18200117A12 /* BasicInfoContent.swift */,
+				16352B3929728C93007C041B /* UserCustomReviewView.swift */,
 			);
 			path = Write;
 			sourceTree = "<group>";
@@ -144,6 +161,7 @@
 				7AD990B8291A9CBE00553E2A /* View */,
 				7AD990B9291A9CD300553E2A /* ViewModel */,
 				7AD990BA291A9CDD00553E2A /* Model */,
+				16352B3D297798F2007C041B /* Manager */,
 				7AD990BB291A9CE500553E2A /* Extension */,
 				7AD990B0291A9CA000553E2A /* Preview Content */,
 			);
@@ -193,6 +211,8 @@
 			children = (
 				7AD990C5291AA9A100553E2A /* Color+.swift */,
 				7A8EDE8B296E711A0011E5D1 /* Date+.swift */,
+				16352B3B2972EFD6007C041B /* TextField+.swift */,
+				16352B40297A6CFA007C041B /* View+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -282,13 +302,17 @@
 				251EB6F929213128009FB8C4 /* GBZGButton.swift in Sources */,
 				A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */,
 				163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */,
+				16352B41297A6CFA007C041B /* View+.swift in Sources */,
+				16352B3C2972EFD6007C041B /* TextField+.swift in Sources */,
 				7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */,
 				163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */,
+				16352B3A29728C93007C041B /* UserCustomReviewView.swift in Sources */,
 				7AD990C6291AA9A100553E2A /* Color+.swift in Sources */,
 				A09CBA76292296F400D31F5F /* WriteView.swift in Sources */,
 				A09CBA722922962400D31F5F /* GBZGTabRouter.swift in Sources */,
 				7AD70D08293E62FF009142FC /* HomeViewModel.swift in Sources */,
 				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
+				16352B3F2977990C007C041B /* KeyboardResponder.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
 				16E17A95296E948700278012 /* OptionContainer.swift in Sources */,
 				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
