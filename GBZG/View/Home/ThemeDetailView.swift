@@ -48,7 +48,7 @@ extension ThemeDetailView {
     var visitedThemeInfoContainer: some View {
         VStack {
             locationComponent
-            //            themeNameComponent
+            themeNameComponent
             //            visitInfoBoxComponent
             //            themeGradeComponent
             //            escapeSuccessComponent
@@ -67,6 +67,13 @@ extension ThemeDetailView {
         .frame(maxWidth: .infinity, alignment: .leading)
         .gbzgBody2()
         .foregroundColor(.textSecondary)
+    }
+    
+    var themeNameComponent: some View {
+        Text("ThemeName")
+            .gbzgLargeTitle()
+            .foregroundColor(.textPrimary)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
