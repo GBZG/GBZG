@@ -322,8 +322,8 @@ private extension UserCustomReviewView {
     }
 }
 
-struct UserCustomReviewView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserCustomReviewView()
-    }
-}
+//struct UserCustomReviewView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserCustomReviewView()
+//    }
+//}

@@ -145,8 +145,8 @@ private extension OptionContainer {
     }
 }
 
-struct OptionContainer_Previews: PreviewProvider {
-    static var previews: some View {
-        OptionContainer(containerMode: .constant(.close), contentMode: .constant(.none))
-    }
-}
+//struct OptionContainer_Previews: PreviewProvider {
+//    static var previews: some View {
+//        OptionContainer(containerMode: .constant(.close), contentMode: .constant(.none))
+//    }
+//}
