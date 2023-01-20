@@ -50,8 +50,8 @@ extension ThemeDetailView {
             locationComponent
             themeNameComponent
             visitInfoBoxComponent
-            //            themeGradeComponent
-            //            escapeSuccessComponent
+            themeGradeComponent
+            escapeSuccessComponent
             //            fearLevelComoponent
             //            numberOfhintsUsedComponent
             //            visitedThemeLogComponent
@@ -104,6 +104,19 @@ extension ThemeDetailView {
             HStack {
                 ForEach(["흙길", "풀길", "꽃길", "인생테마"], id: \.self) { text in
                     componentLabel(text: text, selected: text == "인생테마" ? true : false)
+                }
+                Spacer()
+            }
+        }
+        .padding(.bottom, 24)
+    }
+    
+    var escapeSuccessComponent: some View {
+        VStack {
+            componentTitle(title: "탈출 성공 여부")
+            HStack {
+                ForEach(["탈출 성공", "탈출 실패"], id: \.self) { text in
+                    componentLabel(text: text, selected: text == "탈출 성공" ? true : false)
                 }
                 Spacer()
             }
