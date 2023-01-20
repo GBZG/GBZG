@@ -56,7 +56,7 @@ extension ThemeDetailView {
             escapeSuccessComponent
             fearLevelComoponent
             numberOfhintsUsedComponent
-            //            visitedThemeLogComponent
+            visitedThemeLogComponent
         }
         .padding(.bottom, 16)
     }
@@ -156,6 +156,17 @@ extension ThemeDetailView {
             }
         }
         .padding(.bottom, 24)
+    }
+    
+    var visitedThemeLogComponent: some View {
+        VStack {
+            componentTitle(title: "방탈출 탈출일지")
+            Text("탈출일지 내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용")
+                .gbzgBody2()
+                .foregroundColor(.textField)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .padding(.bottom, 24)
+        }
     }
 }
 
