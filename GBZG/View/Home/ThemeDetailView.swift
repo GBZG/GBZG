@@ -10,6 +10,8 @@ import SwiftUI
 struct ThemeDetailView: View {
     let posterSize = UIScreen.main.bounds.size.width
     
+    let point = 3.5
+    
     var body: some View {
         VStack {
             ScrollView(showsIndicators: false) {
@@ -52,7 +54,7 @@ extension ThemeDetailView {
             visitInfoBoxComponent
             themeGradeComponent
             escapeSuccessComponent
-            //            fearLevelComoponent
+                        fearLevelComoponent
             //            numberOfhintsUsedComponent
             //            visitedThemeLogComponent
         }
@@ -117,6 +119,25 @@ extension ThemeDetailView {
             HStack {
                 ForEach(["탈출 성공", "탈출 실패"], id: \.self) { text in
                     componentLabel(text: text, selected: text == "탈출 성공" ? true : false)
+                }
+                Spacer()
+            }
+        }
+        .padding(.bottom, 24)
+    }
+    
+    var fearLevelComoponent: some View {
+        VStack {
+            componentTitle(title: "공포도")
+            HStack {
+                ForEach(1...5, id: \.self) { star in
+                    if Double(star) > point && Double(star - 1) < point {
+                        Image(systemName: "star.leadinghalf.filled")
+                            .foregroundColor(.primaryPurple)
+                    } else {
+                        Image(systemName: point < Double(star) ? "star" : "star.fill")
+                            .foregroundColor(.primaryPurple)
+                    }
                 }
                 Spacer()
             }
