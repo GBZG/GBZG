@@ -54,8 +54,8 @@ extension ThemeDetailView {
             visitInfoBoxComponent
             themeGradeComponent
             escapeSuccessComponent
-                        fearLevelComoponent
-            //            numberOfhintsUsedComponent
+            fearLevelComoponent
+            numberOfhintsUsedComponent
             //            visitedThemeLogComponent
         }
         .padding(.bottom, 16)
@@ -139,6 +139,19 @@ extension ThemeDetailView {
                             .foregroundColor(.primaryPurple)
                     }
                 }
+                Spacer()
+            }
+        }
+        .padding(.bottom, 24)
+    }
+    
+    var numberOfhintsUsedComponent: some View {
+        VStack {
+            componentTitle(title: "사용 힌트 수")
+            HStack {
+                Text("3개")
+                    .gbzgBody2()
+                    .foregroundColor(.textSecondary)
                 Spacer()
             }
         }
