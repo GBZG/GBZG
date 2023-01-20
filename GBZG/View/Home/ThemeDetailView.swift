@@ -97,6 +97,19 @@ extension ThemeDetailView {
         .cornerRadius(12)
         .padding(.bottom, 16)
     }
+    
+    var themeGradeComponent: some View {
+        VStack {
+            componentTitle(title: "평점")
+            HStack {
+                ForEach(["흙길", "풀길", "꽃길", "인생테마"], id: \.self) { text in
+                    componentLabel(text: text, selected: text == "인생테마" ? true : false)
+                }
+                Spacer()
+            }
+        }
+        .padding(.bottom, 24)
+    }
 }
 
 // MARK: - ThemeDetailView common component
@@ -113,6 +126,20 @@ private struct componentTitle: View {
         .gbzgBody1()
         .foregroundColor(.textPrimary)
         .padding(.bottom, 12)
+    }
+}
+
+private struct componentLabel: View {
+    
+    let text: String
+    let selected: Bool
+    var body: some View {
+        Text(text)
+            .gbzgBody2()
+            .foregroundColor(selected ? .background : .textSecondary)
+            .padding(8)
+            .background(selected ? Color.primaryPurple : Color.tagBase)
+            .cornerRadius(12)
     }
 }
 
