@@ -172,7 +172,7 @@ private extension ThemeDetailView {
 
 // MARK: - ThemeDetailView common component
 
-private struct componentTitle: View {
+private struct ComponentTitle: View {
     
     let title: String
     
@@ -187,7 +187,7 @@ private struct componentTitle: View {
     }
 }
 
-private struct componentLabel: View {
+private struct ComponentLabel: View {
     
     let text: String
     let selected: Bool
