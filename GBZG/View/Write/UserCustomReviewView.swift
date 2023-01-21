@@ -25,7 +25,6 @@ struct UserCustomReviewView: View {
     
     var body: some View {
         ZStack {
-            Color.background
             VStack {
                 Capsule()
                         .fill(Color.secondary)
@@ -39,6 +38,7 @@ struct UserCustomReviewView: View {
                 .padding(.bottom, keyboard.currentHeight + 35)
                 .animation(.spring(), value: keyboard.currentHeight)
             }
+            .background(Color.background)
             .ignoresSafeArea(.keyboard)
             VStack {
                 Spacer()
@@ -322,8 +322,8 @@ private extension UserCustomReviewView {
     }
 }
 
-//struct UserCustomReviewView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        UserCustomReviewView()
-//    }
-//}
+struct UserCustomReviewView_Previews: PreviewProvider {
+    static var previews: some View {
+        UserCustomReviewView()
+    }
+}

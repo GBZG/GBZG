@@ -14,7 +14,7 @@ struct TextLengthLimiter: ViewModifier {
   func body(content: Content) -> some View {
     content
       .onReceive(text.publisher.collect()) { output in
-        text = String(output.prefix(maxLength)) // HERE
+        text = String(output.prefix(maxLength))
       }
   }
 }
