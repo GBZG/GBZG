@@ -1,5 +1,5 @@
 //
-//  RecentThemeRow.swift
+//  ThemeRow.swift
 //  GBZG
 //
 //  Created by ICHAN NAM on 2023/01/18.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 // TODO: 임시 Model, Integration 하면서 뺄 부분
-struct TmpRecentThemeRowModel: Identifiable {
+struct TmpThemeRowModel: Identifiable {
     let id: UUID
     let title: String
     let location: String
@@ -20,9 +20,10 @@ struct TmpRecentThemeRowModel: Identifiable {
     }
 }
 
-struct RecentThemeRow: View {
+struct ThemeRow: View {
     // TODO: 임시 Model, Integration 하면서 뺄 부분
-    let model: TmpRecentThemeRowModel
+    let model: TmpThemeRowModel
+    let isSearchResult: Bool
     
     var body: some View {
         HStack(alignment: .top) {
@@ -35,12 +36,14 @@ struct RecentThemeRow: View {
             }
             .frame(minWidth: 100, maxHeight: 104)
             Spacer()
-            XmarkButton(action: {})
+            if !isSearchResult { // isSearchResult == false
+                XmarkButton(action: {})
+            }
         }
     }
 }
 
-private extension RecentThemeRow {
+private extension ThemeRow {
     func PosterImage(url: URL?) -> some View {
         Rectangle()
             .foregroundColor(.primaryPurple)
@@ -61,6 +64,7 @@ private extension RecentThemeRow {
                     .gbzgBody2()
             }
             .foregroundColor(.textSecondary)
+            Spacer()
         }
     }
     
@@ -77,11 +81,12 @@ private extension RecentThemeRow {
 
 //struct RecentThemeRow_Previews: PreviewProvider {
 //    static var previews: some View {
-//        RecentThemeRow(
-//            model: TmpRecentThemeRowModel(
+//        ThemeRow(
+//            model: TmpThemeRowModel(
 //                title: "단디해라",
 //                location: "지구별방탈출"
-//            )
+//            ),
+//            isSearchResult: false
 //        )
 //    }
 //}

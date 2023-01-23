@@ -15,9 +15,7 @@ struct SearchView: View {
             Text("테마 검색")
                 .gbzgHeadline()
             SearchBar(text: $searchKeyword)
-            searchKeyword.count > 0
-                ? nil
-                : RecentThemeList()
+            SearchResultList(searchKeyword: $searchKeyword)
         }
         .foregroundColor(.textPrimary)
     }
