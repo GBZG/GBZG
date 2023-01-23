@@ -102,10 +102,10 @@ private extension ThemeDetailView {
     
     var themeGradeComponent: some View {
         VStack {
-            ComponentTitle(title: "평점")
+            componentTitle("평점")
             HStack {
                 ForEach(["흙길", "풀길", "꽃길", "인생테마"], id: \.self) { text in
-                    ComponentLabel(text: text, selected: text == "인생테마" ? true : false)
+                    componentLabel(text, selected: text == "인생테마" ? true : false)
                 }
                 Spacer()
             }
@@ -115,10 +115,10 @@ private extension ThemeDetailView {
     
     var escapeSuccessComponent: some View {
         VStack {
-            ComponentTitle(title: "탈출 성공 여부")
+            componentTitle("탈출 성공 여부")
             HStack {
                 ForEach(["탈출 성공", "탈출 실패"], id: \.self) { text in
-                    ComponentLabel(text: text, selected: text == "탈출 성공" ? true : false)
+                    componentLabel(text, selected: text == "탈출 성공" ? true : false)
                 }
                 Spacer()
             }
@@ -128,7 +128,7 @@ private extension ThemeDetailView {
     
     var fearLevelComoponent: some View {
         VStack {
-            ComponentTitle(title: "공포도")
+            componentTitle("공포도")
             HStack {
                 ForEach(1...5, id: \.self) { star in
                     if Double(star) > point && Double(star - 1) < point {
@@ -147,7 +147,7 @@ private extension ThemeDetailView {
     
     var numberOfhintsUsedComponent: some View {
         VStack {
-            ComponentTitle(title: "사용 힌트 수")
+            componentTitle("사용 힌트 수")
             HStack {
                 Text("3개")
                     .gbzgBody2()
@@ -160,7 +160,7 @@ private extension ThemeDetailView {
     
     var visitedThemeLogComponent: some View {
         VStack {
-            ComponentTitle(title: "방탈출 탈출일지")
+            componentTitle("방탈출 탈출일지")
             Text("탈출일지 내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용")
                 .gbzgBody2()
                 .foregroundColor(.textField)
@@ -168,16 +168,11 @@ private extension ThemeDetailView {
                 .padding(.bottom, 24)
         }
     }
-}
-
-// MARK: - ThemeDetailView common component
-
-private struct ComponentTitle: View {
     
-    let title: String
+    // MARK: - ThemeDetailView common component
     
-    var body: some View {
-        HStack {
+    private func componentTitle(_ title: String) -> some View {
+        return HStack {
             Text(title)
             Spacer()
         }
@@ -185,14 +180,9 @@ private struct ComponentTitle: View {
         .foregroundColor(.textPrimary)
         .padding(.bottom, 12)
     }
-}
-
-private struct ComponentLabel: View {
     
-    let text: String
-    let selected: Bool
-    var body: some View {
-        Text(text)
+    private func componentLabel(_ text: String, selected: Bool) -> some View {
+        return Text(text)
             .gbzgBody2()
             .foregroundColor(selected ? .background : .textSecondary)
             .padding(8)
