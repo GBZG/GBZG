@@ -8,29 +8,23 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State private var searchKeyword = ""
+    
     var body: some View {
         VStack(spacing: 16) {
             Text("테마 검색")
                 .gbzgHeadline()
-            
-            SearchBar()
-            
-            HStack {
-                Text("최근 검색 테마")
-                    .gbzgSubtitle()
-                
-                Spacer()
-            }
-            .padding(EdgeInsets(top: 8, leading: 0, bottom: 4, trailing: 0))
-            
-            RecentThemeList()
+            SearchBar(text: $searchKeyword)
+            searchKeyword.count > 0
+                ? nil
+                : RecentThemeList()
         }
         .foregroundColor(.textPrimary)
     }
 }
 
-//struct SearchView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SearchView()
-//    }
-//}
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchView()
+    }
+}

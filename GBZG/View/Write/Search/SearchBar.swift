@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchBar: View {
-    @State private var text = ""
+    @Binding var text: String
     
     var body: some View {
         HStack(spacing: 8) {
@@ -30,6 +30,6 @@ struct SearchBar: View {
 
 //struct SearchBar_Previews: PreviewProvider {
 //    static var previews: some View {
-//        SearchBar()
+//        SearchBar(text: .constant(""))
 //    }
 //}
