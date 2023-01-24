@@ -20,7 +20,7 @@ struct SearchResultList: View {
     ]
     
     // TODO: 임시 데이터 리스트, Integration 하면서 뺄 부분 - 최근검색기록이 없는 경우
-    // let tmpList: [TmpRecentThemeRowModel] = []
+    // let tmpList: [TmpThemeRowModel] = []
     
     var body: some View {
         VStack(alignment: .trailing) {
