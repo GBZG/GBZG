@@ -29,29 +29,29 @@ struct ThemeRow: View {
         HStack(alignment: .top) {
             Button(action: {}) {
                 HStack(spacing: 16) {
-                    PosterImage(url: nil)
-                    TextInfo(title: model.title, location: model.location)
+                    posterImage(url: nil)
+                    textInfo(title: model.title, location: model.location)
                     Spacer()
                 }
             }
             .frame(minWidth: 100, maxHeight: 104)
             Spacer()
             if !isSearchResult { // isSearchResult == false
-                XmarkButton(action: {})
+                xmarkButton(action: {})
             }
         }
     }
 }
 
 private extension ThemeRow {
-    func PosterImage(url: URL?) -> some View {
+    func posterImage(url: URL?) -> some View {
         Rectangle()
             .foregroundColor(.primaryPurple)
             .frame(width: 76, height: 104)
             .cornerRadius(12)
     }
     
-    func TextInfo(title: String, location: String) -> some View {
+    func textInfo(title: String, location: String) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(title)
                 .foregroundColor(.textPrimary)
@@ -68,7 +68,7 @@ private extension ThemeRow {
         }
     }
     
-    func XmarkButton(action: () -> Void) -> some View {
+    func xmarkButton(action: () -> Void) -> some View {
         Button(action: {}) {
             Image(systemName: "xmark")
                 .resizable()

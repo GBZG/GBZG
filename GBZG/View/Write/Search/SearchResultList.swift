@@ -35,12 +35,12 @@ struct SearchResultList: View {
             
             ScrollView {
                 if searchKeyword.count > 0 {
-                    SearchList
+                    searchList
                 } else {
                     if tmpList.count > 0 {
-                        NotEmptyRecentList
+                        notEmptyRecentList
                     } else {
-                        EmptyRecentList
+                        emptyRecentList
                     }
                 }
             }
@@ -49,7 +49,7 @@ struct SearchResultList: View {
 }
 
 private extension SearchResultList {
-    var SearchList: some View {
+    var searchList: some View {
         VStack(spacing: 20) {
             ForEach(tmpList.filter{$0.title.contains(searchKeyword)}) { row in
                 ThemeRow(
@@ -60,7 +60,7 @@ private extension SearchResultList {
         }
     }
     
-    var EmptyRecentList: some View {
+    var emptyRecentList: some View {
         HStack {
             Text("검색된 테마가 없습니다.")
                 .multilineTextAlignment(.leading)
@@ -70,7 +70,7 @@ private extension SearchResultList {
         }
     }
     
-    var NotEmptyRecentList: some View {
+    var notEmptyRecentList: some View {
         VStack(spacing: 20) {
             ForEach(tmpList) { row in
                 ThemeRow(
