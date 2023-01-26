@@ -25,6 +25,7 @@ struct HomeView: View {
             .padding(16)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         }
+        .accentColor(.textField)
     }
 }
 
@@ -94,7 +95,7 @@ private extension HomeView {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(Range(0...5)) { num in
-                        NavigationLink(destination: Text("DetailView")) {
+                        NavigationLink(destination: ThemeDetailView()) {
                             RoundedRectangle(cornerRadius: 12)
                                 .frame(width: self.lifeThemeImageSize, height: self.lifeThemeImageSize * 14 / 11)
                         }
@@ -128,7 +129,7 @@ private extension HomeView {
             
             VStack {
                 ForEach(Range(0...5)) { num in
-                    NavigationLink(destination: Text("DetailView")) {
+                    NavigationLink(destination: ThemeDetailView()) {
                         escapeLogCell
                     }
                 }
