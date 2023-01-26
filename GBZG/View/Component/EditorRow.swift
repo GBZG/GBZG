@@ -114,10 +114,10 @@ extension EditorRow {
         case .isSuccess:
             return AnyView(
                 HStack(spacing: 8) {
-                    TagButton(label: "탈출 성공") {
+                    TagButton(label: "탈출 성공", isActive: false) { // TODO: active 뷰모델 로직 처리 필요
                         
                     }
-                    TagButton(label: "탈출 실패") {
+                    TagButton(label: "탈출 실패", isActive: false) {
                         
                     }
                 }
@@ -125,16 +125,16 @@ extension EditorRow {
         case .grade:
             return AnyView(
                 HStack(spacing: 8) {
-                    TagButton(label: "흙길") {
+                    TagButton(label: "흙길", isActive: false) {
                         
                     }
-                    TagButton(label: "풀길") {
+                    TagButton(label: "풀길", isActive: false) {
                         
                     }
-                    TagButton(label: "꽃길") {
+                    TagButton(label: "꽃길", isActive: false) {
                         
                     }
-                    TagButton(label: "인생 테마") {
+                    TagButton(label: "인생 테마", isActive: false) {
                         
                     }
                 }
