@@ -82,14 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< feat/user-custom-review
 		16352B3D297798F2007C041B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				16352B3E2977990C007C041B /* KeyboardResponder.swift */,
 			);
 			path = Manager;
-=======
+			sourceTree = "<group>";
+		};
 		25B96F8D2976CEFE00987134 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +99,6 @@
 				25B96F942976F27300987134 /* ThemeRow.swift */,
 			);
 			path = Search;
->>>>>>> dev
 			sourceTree = "<group>";
 		};
 		7AD70D00293E6290009142FC /* Home */ = {
@@ -117,11 +116,8 @@
 				A09CBA75292296F400D31F5F /* WriteView.swift */,
 				16E17A94296E948700278012 /* OptionContainer.swift */,
 				7ADA261E296DC18200117A12 /* BasicInfoContent.swift */,
-<<<<<<< feat/user-custom-review
 				16352B3929728C93007C041B /* UserCustomReviewView.swift */,
-=======
 				25B96F8D2976CEFE00987134 /* Search */,
->>>>>>> dev
 			);
 			path = Write;
 			sourceTree = "<group>";
@@ -333,12 +329,9 @@
 				A09CBA74292296EA00D31F5F /* HomeView.swift in Sources */,
 				25B96F952976F27300987134 /* ThemeRow.swift in Sources */,
 				163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */,
-<<<<<<< feat/user-custom-review
 				16352B41297A6CFA007C041B /* View+.swift in Sources */,
 				16352B3C2972EFD6007C041B /* TextField+.swift in Sources */,
-=======
 				25B96F932976F25900987134 /* SearchResultList.swift in Sources */,
->>>>>>> dev
 				7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */,
 				163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */,
 				16352B3A29728C93007C041B /* UserCustomReviewView.swift in Sources */,
