@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RankingView: View {
-    @Environment(\.presentationMode) private var presentationMode
+    @Environment(\.dismiss) private var dismiss
     @StateObject private var viewModel = RankingViewModel()
     @State private var isEditing = false
 
@@ -29,7 +29,7 @@ struct RankingView: View {
             .navigationTitle("인생테마 랭킹")
             .navigationBarItems(
                 leading: Button(action: {
-                    presentationMode.wrappedValue.dismiss()
+                    dismiss()
                 }, label:{
                     Image(systemName: "chevron.left")
                         .foregroundColor(.textPrimary)
@@ -48,6 +48,7 @@ struct RankingView: View {
         }
     }
 }
+
 
 
 struct RankingView_Previews: PreviewProvider {
