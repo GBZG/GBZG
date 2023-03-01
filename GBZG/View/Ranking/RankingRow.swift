@@ -7,16 +7,14 @@
 import SwiftUI
 
 struct RankingRow: View {
-    let rank: Int
-    let title: String
-    let location: String
+    @Binding var item: RankingItem
+
     var body: some View {
-        
-        HStack(spacing: 16){
+        HStack(spacing: 16) {
             // 랭킹
-            Text(String(rank))
-                .gbzgHeadline()
-                .foregroundColor(.textPrimary)
+            Text(String(item.rank))
+                .font(.headline)
+                .foregroundColor(.primary)
 
             // 이미지
             RoundedRectangle(cornerRadius: 12)
@@ -24,28 +22,28 @@ struct RankingRow: View {
                 .frame(width: 72, height: 90)
 
             // 테마 정보
-            VStack(alignment: .leading, spacing: 4){
+            VStack(alignment: .leading, spacing: 4) {
                 HStack {
-                    Text(title)
-                        .gbzgHeadline()
-                    .foregroundColor(.textPrimary)
+                    Text(item.title)
+                        .font(.headline)
+                        .foregroundColor(.primary)
                     Image(systemName: "leaf.fill")
-                        .gbzgTitle1()
-                        .foregroundColor(.textSecondary)
+                        .font(.title)
+                        .foregroundColor(.secondary)
                 }
-                HStack(spacing: 4){
+                HStack(spacing: 4) {
                     Image(systemName: "paperplane.fill")
-                        .gbzgBody2()
-                        .foregroundColor(.textSecondary)
-                    Text(location)
-                        .gbzgBody2()
-                        .foregroundColor(.textSecondary)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                    Text(item.location)
+                        .font(.body)
+                        .foregroundColor(.secondary)
                     Text("|")
-                        .gbzgBody2()
-                        .foregroundColor(.textSecondary)
-                    Text("22.06.21")
-                        .gbzgBody2()
-                        .foregroundColor(.textSecondary)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                    Text(item.date)
+                        .font(.body)
+                        .foregroundColor(.secondary)
                 }
             }
             Spacer()
@@ -53,8 +51,11 @@ struct RankingRow: View {
     }
 }
 
-struct RankingRow_Previews: PreviewProvider {
-    static var previews: some View {
-        RankingRow(rank: 1, title: "안녕", location: "수원")
-    }
-}
+
+
+
+//struct RankingRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RankingRow()
+//    }
+//}
