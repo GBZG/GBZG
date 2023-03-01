@@ -37,7 +37,7 @@
 		A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA77292296FE00D31F5F /* TemplateView.swift */; };
 		A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F693B02977B720005B7521 /* ThemeDetailView.swift */; };
 		C172324329AF52A8005EFE85 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324229AF52A8005EFE85 /* RankingView.swift */; };
-		C172324529AF52CD005EFE85 /* RankingLIst.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324429AF52CD005EFE85 /* RankingLIst.swift */; };
+		C172324529AF52CD005EFE85 /* RankingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324429AF52CD005EFE85 /* RankingRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +72,7 @@
 		A09CBA77292296FE00D31F5F /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 		A0F693B02977B720005B7521 /* ThemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDetailView.swift; sourceTree = "<group>"; };
 		C172324229AF52A8005EFE85 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
-		C172324429AF52CD005EFE85 /* RankingLIst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingLIst.swift; sourceTree = "<group>"; };
+		C172324429AF52CD005EFE85 /* RankingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				C172324229AF52A8005EFE85 /* RankingView.swift */,
-				C172324429AF52CD005EFE85 /* RankingLIst.swift */,
+				C172324429AF52CD005EFE85 /* RankingRow.swift */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
 				16352B3F2977990C007C041B /* KeyboardResponder.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
-				C172324529AF52CD005EFE85 /* RankingLIst.swift in Sources */,
+				C172324529AF52CD005EFE85 /* RankingRow.swift in Sources */,
 				16E17A95296E948700278012 /* OptionContainer.swift in Sources */,
 				C172324329AF52A8005EFE85 /* RankingView.swift in Sources */,
 				A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */,

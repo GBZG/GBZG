@@ -30,8 +30,6 @@ let themesData: [Theme] = [
 
 ]
 
-
-
 struct RankingView: View {
     @Environment(\.presentationMode) private var presentationMode
 
@@ -43,7 +41,7 @@ struct RankingView: View {
         NavigationView{
             List{
                 ForEach(themes) { theme in
-                    RankingList(rank: theme.index, title: theme.title, location: theme.location)
+                    RankingRow(rank: theme.index, title: theme.title, location: theme.location)
                 }
                 .onDelete(perform: removeList)
                 .onMove(perform: moveList)
@@ -55,7 +53,6 @@ struct RankingView: View {
             
             // Edit Mode
             .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive))
-
             
             // Navigation Bar
             .navigationTitle("인생테마 랭킹")
@@ -78,11 +75,9 @@ struct RankingView: View {
                 }
             )//: NavBarItems
         }
-        
     }
     
     //MARK: - 함수
-    
     func removeList(at offsets: IndexSet) {
         themes.remove(atOffsets: offsets)
     }
