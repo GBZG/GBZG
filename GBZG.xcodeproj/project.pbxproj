@@ -36,6 +36,8 @@
 		A09CBA76292296F400D31F5F /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA75292296F400D31F5F /* WriteView.swift */; };
 		A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA77292296FE00D31F5F /* TemplateView.swift */; };
 		A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F693B02977B720005B7521 /* ThemeDetailView.swift */; };
+		C172324329AF52A8005EFE85 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324229AF52A8005EFE85 /* RankingView.swift */; };
+		C172324529AF52CD005EFE85 /* RankingLIst.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324429AF52CD005EFE85 /* RankingLIst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		A09CBA75292296F400D31F5F /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		A09CBA77292296FE00D31F5F /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 		A0F693B02977B720005B7521 /* ThemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDetailView.swift; sourceTree = "<group>"; };
+		C172324229AF52A8005EFE85 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		C172324429AF52CD005EFE85 /* RankingLIst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingLIst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,7 @@
 		7AD990B8291A9CBE00553E2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C172324129AF5294005EFE85 /* Ranking */,
 				7AD70D03293E62CB009142FC /* Tab */,
 				7AD70D00293E6290009142FC /* Home */,
 				7AD70D01293E6295009142FC /* Write */,
@@ -252,6 +257,15 @@
 				251EB6FC2921FE3C009FB8C4 /* Option.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		C172324129AF5294005EFE85 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				C172324229AF52A8005EFE85 /* RankingView.swift */,
+				C172324429AF52CD005EFE85 /* RankingLIst.swift */,
+			);
+			path = Ranking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +358,9 @@
 				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
 				16352B3F2977990C007C041B /* KeyboardResponder.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
+				C172324529AF52CD005EFE85 /* RankingLIst.swift in Sources */,
 				16E17A95296E948700278012 /* OptionContainer.swift in Sources */,
+				C172324329AF52A8005EFE85 /* RankingView.swift in Sources */,
 				A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */,
 				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
 				25B96F912976D3B500987134 /* SearchBar.swift in Sources */,
