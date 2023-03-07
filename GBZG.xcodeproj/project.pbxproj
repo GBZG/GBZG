@@ -36,6 +36,10 @@
 		A09CBA76292296F400D31F5F /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA75292296F400D31F5F /* WriteView.swift */; };
 		A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09CBA77292296FE00D31F5F /* TemplateView.swift */; };
 		A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F693B02977B720005B7521 /* ThemeDetailView.swift */; };
+		C172324329AF52A8005EFE85 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324229AF52A8005EFE85 /* RankingView.swift */; };
+		C172324529AF52CD005EFE85 /* RankingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324429AF52CD005EFE85 /* RankingRow.swift */; };
+		C172324729AF8ECD005EFE85 /* RankingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324629AF8ECD005EFE85 /* RankingItem.swift */; };
+		C172324A29AF8EFC005EFE85 /* RankingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172324929AF8EFC005EFE85 /* RankingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,10 @@
 		A09CBA75292296F400D31F5F /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		A09CBA77292296FE00D31F5F /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 		A0F693B02977B720005B7521 /* ThemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDetailView.swift; sourceTree = "<group>"; };
+		C172324229AF52A8005EFE85 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		C172324429AF52CD005EFE85 /* RankingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRow.swift; sourceTree = "<group>"; };
+		C172324629AF8ECD005EFE85 /* RankingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingItem.swift; sourceTree = "<group>"; };
+		C172324929AF8EFC005EFE85 /* RankingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,7 @@
 		7AD990B8291A9CBE00553E2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C172324129AF5294005EFE85 /* Ranking */,
 				7AD70D03293E62CB009142FC /* Tab */,
 				7AD70D00293E6290009142FC /* Home */,
 				7AD70D01293E6295009142FC /* Write */,
@@ -216,6 +225,7 @@
 		7AD990B9291A9CD300553E2A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C172324829AF8EEB005EFE85 /* Ranking */,
 				7AD70D04293E62E3009142FC /* Home */,
 				7AD70D05293E62E9009142FC /* Write */,
 				7AD70D06293E62EF009142FC /* Template */,
@@ -227,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				A09CBA712922962400D31F5F /* GBZGTabRouter.swift */,
+				C172324629AF8ECD005EFE85 /* RankingItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +263,23 @@
 				251EB6FC2921FE3C009FB8C4 /* Option.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		C172324129AF5294005EFE85 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				C172324229AF52A8005EFE85 /* RankingView.swift */,
+				C172324429AF52CD005EFE85 /* RankingRow.swift */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		C172324829AF8EEB005EFE85 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				C172324929AF8EFC005EFE85 /* RankingViewModel.swift */,
+			);
+			path = Ranking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +359,7 @@
 				163A0FA02925582700BFF0D2 /* TagButton.swift in Sources */,
 				16352B41297A6CFA007C041B /* View+.swift in Sources */,
 				16352B3C2972EFD6007C041B /* TextField+.swift in Sources */,
+				C172324A29AF8EFC005EFE85 /* RankingViewModel.swift in Sources */,
 				25B96F932976F25900987134 /* SearchResultList.swift in Sources */,
 				7AD70D0A293E6308009142FC /* WriteViewModel.swift in Sources */,
 				163A0F9C2925261E00BFF0D2 /* EditorRow.swift in Sources */,
@@ -344,7 +373,10 @@
 				7AD70D0C293E6310009142FC /* TemplateViewModel.swift in Sources */,
 				16352B3F2977990C007C041B /* KeyboardResponder.swift in Sources */,
 				A09CBA70292295E700D31F5F /* GBZGTabView.swift in Sources */,
+				C172324529AF52CD005EFE85 /* RankingRow.swift in Sources */,
 				16E17A95296E948700278012 /* OptionContainer.swift in Sources */,
+				C172324329AF52A8005EFE85 /* RankingView.swift in Sources */,
+				C172324729AF8ECD005EFE85 /* RankingItem.swift in Sources */,
 				A0F693B12977B720005B7521 /* ThemeDetailView.swift in Sources */,
 				A09CBA78292296FE00D31F5F /* TemplateView.swift in Sources */,
 				25B96F912976D3B500987134 /* SearchBar.swift in Sources */,
