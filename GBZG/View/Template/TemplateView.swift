@@ -8,13 +8,41 @@
 import SwiftUI
 
 struct TemplateView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack(alignment: .leading) {
+                ScrollView(showsIndicators: false) {
+                    TemplateViewHeader
+                }
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+        }
+        .tint(.textField)
     }
 }
 
-//struct TemplateView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TemplateView()
-//    }
-//}
+private extension TemplateView {
+    
+    // MARK: - TemplateView Header
+    
+    var TemplateViewHeader: some View {
+        HStack {
+            Text("내 템플릿")
+                .gbzgLargeTitle()
+            Spacer()
+            NavigationLink(destination: Text("good")) {
+                Image(systemName: "plus")
+                    .tint(.textField)
+            }
+        }
+        .padding(.bottom, 12)
+    }
+}
+
+struct TemplateView_Previews: PreviewProvider {
+    static var previews: some View {
+        TemplateView()
+    }
+}
