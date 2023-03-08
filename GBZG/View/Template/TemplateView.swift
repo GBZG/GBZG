@@ -52,32 +52,30 @@ private extension TemplateView {
             ForEach(items, id: \.self) { item in
                 NavigationLink(destination: Text("\(item)")) {
                     ItemCell(title: "item.title", components: ["item.component1", "item.component2"])
+                        .padding(.bottom, 12)
                 }
             }
         }
     }
     
     func ItemCell(title: String, components: [String]) -> some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text(title)
                     .tint(.textPrimary)
                 Spacer()
             }
             .padding(.top, 16)
-            .padding(.bottom, 8)
-            .padding(.horizontal, 16)
             
             Text(components.joined(separator: " "))
                 .tint(.textSecondary)
-                .padding(.horizontal, 16)
                 .padding(.bottom, 16)
         }
+        .padding(.horizontal, 16)
         .frame(width: itemWidth)
         .gbzgBody2()
         .background(Color.textField)
         .cornerRadius(12)
-        .padding(.bottom, 12)
     }
     
     var EmptyListContainer: some View {
