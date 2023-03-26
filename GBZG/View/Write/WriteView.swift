@@ -20,10 +20,16 @@ struct WriteView: View {
                 customInfoContainer
                 Spacer()
             }
+            .contentShape(Rectangle())
+            .onTapGesture {
+                viewModel.containerMode = .close
+                viewModel.contentMode = .none
+            }
             .padding(.horizontal)
             .sheet(isPresented: $viewModel.isSearchViewActive) {
                 Text("SearchView Here")
             }
+            OptionContainer(containerMode: $viewModel.containerMode, contentMode: $viewModel.contentMode)
             calendarView
         }
     }

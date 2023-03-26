@@ -50,7 +50,7 @@ enum GBZGTab: CaseIterable {
     var view: some View {
         switch self {
         case .home      : HomeView()
-        case .write     : WriteView()
+        case .write     : WriteView().setTabBarVisibility(isHidden: true)
         case .template  : TemplateView()
         }
     }

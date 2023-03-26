@@ -36,7 +36,7 @@ struct OptionContainer: View {
             }
             Spacer()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(maxWidth: .infinity)
         .overlay(Rectangle().frame(width: nil, height: 1, alignment: .top).foregroundColor(.tagBase), alignment: .top)
         .background(Color.background)
         .offset(y: calculateOffset())
@@ -87,7 +87,10 @@ private extension OptionContainer {
             case .optionMode:
                 optionView
             case .templateMode:
-                Text("Template View") // TODO: 템플릿뷰로 교체
+                VStack {
+                    Text("Template View")
+                    Spacer()
+                }// TODO: 템플릿뷰로 교체
             }
         }
         .padding(.horizontal, 16)
@@ -130,6 +133,7 @@ private extension OptionContainer {
                     showSheet = true
                 }, buttonActive: .constant(true))
             }
+            Spacer()
         }
     }
     

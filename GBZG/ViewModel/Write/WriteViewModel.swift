@@ -13,6 +13,8 @@ final class WriteViewModel: ObservableObject {
     @Published var isBasicInfoContainerActive = false
     @Published var isCustomInfoContainerActive = false
     @Published var isCalendarActive = false
+    @Published var containerMode = ContainerMode.close
+    @Published var contentMode = ContentMode.none
     
     func didTapTitleButton() {
         toggleSearchView()
