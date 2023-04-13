@@ -8,6 +8,15 @@
 import SwiftUI
 
 extension Color {
+    // Deprecated
+    static let primaryPurple = main
+    static let subOrange = yellow020
+    static let subPink = red010
+    static let background = backgroundBase
+    static let buttonDisabled = btnBgDisabled
+    static let tagBase = tagBg
+    static let textField = gray030
+    
     // Alias
     static let main = purple030
     static let error = red020
