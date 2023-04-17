@@ -13,10 +13,15 @@ struct Component: Hashable {
     var listNumber: Int = 0
 }
 
+enum Field: Hashable {
+    case templateName
+}
+
 struct TemplateCreationView: View {
     
-    @State var text = ""
-    @State var allComponents: [Component] = [
+    @State private var templateName = ""
+    @FocusState private var focusField: Field?
+    @State private var allComponents: [Component] = [
         Component(name: "대충"),
         Component(name: "템플릿의"),
         Component(name: "구성"),
@@ -61,14 +66,15 @@ extension TemplateCreationView {
     var TemplateNameEditContainer: some View {
         VStack {
             HStack {
-                TextField("", text: $text, prompt: Text("템플릿 이름을 입력해주세요."))
+                TextField("", text: $templateName, prompt: Text("템플릿 이름을 입력해주세요."))
+                    .focused($focusField, equals: .templateName)
                     .foregroundColor(.textSecondary)
                 Spacer()
-                if text != "" {
+                if templateName != "" && focusField == .templateName {
                     Image(systemName: "clear.fill")
                         .foregroundColor(.textSecondary)
                         .onTapGesture {
-                            text = ""
+                            templateName = ""
                         }
                 }
             }
@@ -76,8 +82,8 @@ extension TemplateCreationView {
             .frame(minHeight: 20)
             .padding(.bottom, 4)
             Rectangle()
-                .frame(height: 0.8)
-                .foregroundColor(text == "" ? .textPrimary : .purple030)
+                .frame(height: 0.5)
+                .foregroundColor(templateName == "" ? .textTertiary : focusField == .templateName ? .purple030 : .textSecondary)
         }
         .padding(.bottom, 36)
     }
