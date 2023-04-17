@@ -82,7 +82,7 @@ extension TemplateCreationView {
             .frame(minHeight: 20)
             .padding(.bottom, 4)
             Rectangle()
-                .frame(height: 0.5)
+                .frame(height: 1.0)
                 .foregroundColor(templateName == "" ? .textTertiary : focusField == .templateName ? .purple030 : .textSecondary)
         }
         .padding(.bottom, 36)
