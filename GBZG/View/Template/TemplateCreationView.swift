@@ -37,6 +37,14 @@ struct TemplateCreationView: View {
             Spacer()
         }
         .padding(16)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing, content: {
+                Button(action: {
+                }, label: {
+                    Text("등록")
+                })
+            })
+        }
     }
 }
 
