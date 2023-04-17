@@ -39,7 +39,7 @@ private extension TemplateView {
             Text("내 템플릿")
                 .gbzgLargeTitle()
             Spacer()
-            NavigationLink(destination: Text("good")) {
+            NavigationLink(destination: TemplateCreationView()) {
                 Image(systemName: "plus")
                     .tint(.textField)
             }
